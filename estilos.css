@@ -47,20 +47,6 @@ img
 
 /* estilos para el formulario */
 
-
-
- section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: whitesmoke;
- }
- 
- td {
-  padding: 5px;
- }
- 
  fieldset {
   border-radius: 20px;
   border: 2px solid black;
@@ -68,10 +54,6 @@ img
   display: flex;
   flex-direction: column;
   align-items: center;
- }
- 
- table {
-  width: 95%;
  }
  
  legend {
@@ -86,8 +68,8 @@ img
   grid-gap: 5px;
   align-items: center;
  }
+ 
  .botones {
   margin-bottom: 20px;
   
  }
-
