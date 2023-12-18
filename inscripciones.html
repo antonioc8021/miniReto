@@ -20,18 +20,47 @@
             <a href="torneos.html">Torneo</a>
         </nav>
     </div>
-    <!--FORMULARIO DENTRO DE ESTE PONEMOS:
-        -Nombre equipo*
-        -Entrenador*
-        -5 jugadores minimos*
-        -10 maximo
-        -->
-    <div class="cuerpo">
-
-    </div>
-
-    <div class="pie">
-        <!--la copiamos del index -->
+                
+                
+    <fieldset>
+        <legend>
+            Introduce aqui tus datos
+        </legend>
+        <table>
+            <tr>
+                <td>
+                    <label for="Equipo">Equipo</label>
+                </td>
+                <td>
+                    <input type="text" name="Equipo" id="NombreEquipo" placeholder="Introduce el nombre del equipo">
+                </td>
+                <td>
+                    <label for="NombreEntrenador">Entrenador</label>
+                </td>
+                <td>
+                    <input type="text" name="Entrenador" id="NombreDeEntrenador"
+                        placeholder="Introduce el nombre del entrenador">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="NumeroJugadores">Numero de jugadores</label>
+                </td>
+                <td>
+                    <input type="number" name="NumeroJugadores" id="NumeroDeJugadores" min="5" max="10">
+                </td>
+                <td>
+                    <label for="NombreJugadores">Nombre de los jugadores</label>
+                </td>
+                <td>
+                    <input type="text" name="NombreJugadores" id="NombreDeJugadores">
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+     <div class="pie">
+            <!--la copiamos del index -->
+        </div>
     </div>
 </body>
 
