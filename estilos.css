@@ -26,23 +26,30 @@ nav a
     position: relative;
 }
 
-.galeria img 
-{
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-img
+.equipo img
 {
   width: 40%;
   height: 40%;
 }
 
+.galeria img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 100px;
+}
+
+
 .equipo {
   border: 1px solid #ddd;
   padding: 10px;
   margin-bottom: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em;
 }
 
 /* estilos para el formulario */
