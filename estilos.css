@@ -60,6 +60,11 @@ img
   color: rgb(90, 207, 54);
   font-weight: bold;
  }
+ .jugadores {
+  text-decoration: underline;
+  color: rgb(90, 207, 54);
+  font-weight: bold;
+ }
  .botones {
   margin-bottom: 20px;
  font-size: large;
