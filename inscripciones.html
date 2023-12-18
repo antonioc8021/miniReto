@@ -21,91 +21,95 @@
                     <a href="torneos.html">Torneo</a>
                     <a href="inscripciones.html">Inscripciones</a>
                     <a href="organizadores.html">Organizadores</a>
+                    <a href="patrocinadores.html">Patrocinadores</a>
                 </nav>
             </header>
         </div>
-        <form action="">
-            <fieldset>
-                <legend>
-                    Introduce los datos del equipo
-                </legend>
-                <p>
-                    <label for="Equipo">Equipo</label>
-                    <input type="text" name="Equipo" id="NombreEquipo" placeholder="Introduce el nombre del equipo">
-                </p>
-                <p>
-                    <label for="NombreEntrenador">Entrenador</label>
-                    <input type="text" name="Entrenador" id="NombreDeEntrenador"
-                        placeholder="Introduce el nombre del entrenador">
-                </p>
-                <p>
-                    <label for="NumeroJugadores">Numero de jugadores</label>
-                    <input type="number" name="NumeroJugadores" id="NumeroDeJugadores" min="5" max="10">
-                </p>
-                <p>
-                    <label for="NombreCapitan">Nombre del capitan</label>
-                    <input type="text" name="NombreCapitan" id="NombreDelCapitan">
-                </p>
-            </fieldset>
-            <div class="jugadores">
-                <h2>JUGADORES DEL EQUIPO</h2>
-                <div>
-                    <h3>Jugador 1</h3>
-                    <p>Nombre <input type="text" name="nombre1" id="nombre1"></p>
-                    <p>Apellido <input type="text" name="apellido1" id="apellido1"></p>
-                    <p>Edad <input type="number" name="edad1" id="edad1"></p>
-                </div>
-                <div>
-                    <h3>Jugador 2</h3>
-                    <p>Nombre <input type="text" name="nombre2" id="nombre2"></p>
-                    <p>Apellido <input type="text" name="apellido2" id="apellido2"></p>
-                    <p>Edad <input type="number" name="edad2" id="edad2"></p>
-                </div>
-                <div>
-                    <h3>Jugador 1</h3>
-                    <p>Nombre <input type="text" name="nombre1" id="nombre1"></p>
-                    <p>Apellido <input type="text" name="apellido1" id="apellido1"></p>
-                    <p>Edad <input type="text" name="edad1" id="edad1"></p>
-                </div>
-                <div>
-                    <h3>Jugador 1</h3>
-                    <p>Nombre <input type="text" name="nombre1" id="nombre1"></p>
-                    <p>Apellido <input type="text" name="apellido1" id="apellido1"></p>
-                    <p>Edad <input type="text" name="edad1" id="edad1"></p>
-                </div>
-                <div>
-                    <h3>Jugador 1</h3>
-                    <p>Nombre <input type="text" name="nombre1" id="nombre1"></p>
-                    <p>Apellido <input type="text" name="apellido1" id="apellido1"></p>
-                    <p>Edad <input type="text" name="edad1" id="edad1"></p>
+        <div>
+            <form action="">
+                <div class="fieldset">
+                    <h2 class="legend">Introduce los datos del equipo</h2>
+                    <p>
+                        <label for="Equipo">Equipo</label>
+                        <input type="text" name="Equipo" id="NombreEquipo" placeholder="Introduce el nombre del equipo">
+                    </p>
+                    <p>
+                        <label for="NombreEntrenador">Entrenador</label>
+                        <input type="text" name="Entrenador" id="NombreDeEntrenador"
+                            placeholder="Introduce el nombre del entrenador">
+                    </p>
+                    <p>
+                        <label for="NumeroJugadores">Numero de jugadores</label>
+                        <input type="number" name="NumeroJugadores" id="NumeroDeJugadores" min="5" max="10">
+                    </p>
+                    <p>
+                        <label for="NombreCapitan">Nombre del capitan</label>
+                        <input type="text" name="NombreCapitan" id="NombreDelCapitan">
+                    </p>
                 </div>
 
 
+                <div class="jugadores">
+                    <h2>JUGADORES DEL EQUIPO</h2>
+                    <div>
+                        <h3>Jugador 1</h3>
+                        <p><label for="Nombre">Nombre</label> <input type="text" name="nombre1" id="nombre1"></p>
+                        <p><label for="Apellido">Apellido</label> <input type="text" name="apellido1" id="apellido1"></p>
+                        <p><label for="Edad">Edad</label> <input type="number" name="edad1" id="edad1"></p>
+                    </div>
+                    <div>
+                        <h3>Jugador 2</h3>
+                        <p><label for="Nombre">Nombre</label> <input type="text" name="nombre2" id="nombre2" required></p>
+                        <p><label for="Apellido">Apellido</label> <input type="text" name="apellido2" id="apellido2" required></p>
+                        <p><label for="Edad">Edad</label> <input type="number" name="edad2" id="edad2" required></p>
+                    </div>
+                    <div>
+                        <h3>Jugador 3</h3>
+                        <p><label for="Nombre">Nombre</label><input type="text" name="nombre3" id="nombre3" required></p>
+                        <p><label for="Apellido">Apellido</label><input type="text" name="apellido3" id="apellido3" required></p>
+                        <p><label for="Edad">Edad</label> <input type="text" name="edad3" id="edad3" required></p>
+                    </div>
+                    <div>
+                        <h3>Jugador 4</h3>
+                        <p><label for="Nombre">Nombre</label> <input type="text" name="nombre4" id="nombre4" required></p>
+                        <p><label for="Apellido">Apellido</label> <input type="text" name="apellido4" id="apellido4" required></p>
+                        <p><label for="Edad">Edad</label><input type="text" name="edad4" id="edad4" required></p>
+                    </div>
+                    <div>
+                        <h3>Jugador 5</h3>
+                        <p><label for="Nombre">Nombre</label> <input type="text" name="nombre5" id="nombre5" required></p>
+                        <p><label for="Apellido">Apellido</label> <input type="text" name="apellido5" id="apellido5" required></p>
+                        <p><label for="Edad">Edad</label> <input type="text" name="edad5" id="edad5" required></p>
+                    </div>
+
+                </div>
+
+
+
+                <div class="formulario">
+                    <table>
+                        <tr>
+                            <p>
+                                <label for="cometarios">comentarios</label>
+                            </p>
+                            <p>
+                                <input class="grupotexto" type="text" name="comentarios" id="Comentarios">
+                            </p>
+                        </tr>
+                    </table>
+                    <button class="botones" type="reset">
+                        Borrar
+                    </button>
+                    <button class="botones" type="submit">
+                        Enviar
+                    </button>
+                </div>
+            </form>
+
+            <div class="pie">
+                <!--la copiamos del index -->
             </div>
-            <div class="formulario">
-                <table>
-                    <tr>
-                        <p>
-                            <label for="cometarios">comentarios</label>
-                        </p>
-                        <p>
-                            <input class="grupotexto" type="text" name="comentarios" id="Comentarios">
-                        </p>
-                    </tr>
-                </table>
-                <button class="botones" type="reset">
-                    Borrar
-                </button>
-                <button class="botones" type="submit">
-                    Enviar
-                </button>
-            </div>
-        </form>
-
-        <div class="pie">
-            <!--la copiamos del index -->
         </div>
-    </div>
 </body>
 
 </html>
