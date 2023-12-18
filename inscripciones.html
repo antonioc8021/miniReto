@@ -10,163 +10,76 @@
 </head>
 
 <body>
-    <!--cabecera universal la copiamos de index-->
-    <div class="cabecera">
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="equipos.html">Equipos</a>
-            <a href="inscripciones.html">Inscripciones</a>
-            <a href="organizadores.html">organizadores</a>
-            <a href="torneos.html">Torneo</a>
-        </nav>
-    </div>
-    <form action="">
-        <fieldset>
-            <legend>
-                Introduce los datos del equipo
-            </legend>
-            <table>
-                <tr>
-                    <td>
-                        <label for="Equipo">Equipo</label>
-                    </td>
-                    <td>
-                        <input type="text" name="Equipo" id="NombreEquipo" placeholder="Introduce el nombre del equipo">
-                    </td>
-                    <td>
-                        <label for="NombreEntrenador">Entrenador</label>
-                    </td>
-                    <td>
-                        <input type="text" name="Entrenador" id="NombreDeEntrenador"
-                            placeholder="Introduce el nombre del entrenador">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="NumeroJugadores">Numero de jugadores</label>
-                    </td>
-                    <td>
-                        <input type="number" name="NumeroJugadores" id="NumeroDeJugadores" min="5" max="10">
-                    </td>
-                    <td>
-                        <label for="NombreCapitan">Nombre del capitan</label>
-                    </td>
-                    <td>
-                        <input type="text" name="NombreCapitan" id="NombreDelCapitan">
-                    </td>
-                </tr>
-            </table>
-        </fieldset>
-        <fieldset>
-            <legend>
-                Introduce los datos de los jugadores
-            </legend>
-            <table>
-                <tr>
-                    <td>
-                        <label for="Nombre de los jugadores">Nombre del jugador 1</label>
-                    </td>
-                    <td>
-                        <input type="text" name="NombreJugador1" id="NombreDeJugador1" required>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="Nombre de los jugadores">Nombre del jugador 2</label>
-                    </td>
-                    <td>
-                        <input type="text" name="NombreJugador2" id="NombreDeJugador2" required>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="Nombre de los jugadores">Nombre del jugador 3</label>
-                    </td>
-                    <td>
-                        <input type="text" name="NombreJugador3" id="NombreDeJugador3" required>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="Nombre de los jugadores">Nombre del jugador 4</label>
-                    </td>
-                    <td>
-                        <input type="text" name="NombreJugador4" id="NombreDeJugador4" required>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="Nombre de los jugadores">Nombre del jugador 5</label>
-                    </td>
-                    <td>
-                        <input type="text" name="NombreJugador5" id="NombreDeJugador5" required>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="Nombre de los jugadores">Nombre del jugador 6</label>
-                    </td>
-                    <td>
-                        <input type="text" name="NombreJugador6" id="NombreDeJugador6">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="Nombre de los jugadores">Nombre del jugador 7</label>
-                    </td>
-                    <td>
-                        <input type="text" name="NombreJugador7" id="NombreDeJugador7">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="Nombre de los jugadores">Nombre del jugador 8</label>
-                    </td>
-                    <td>
-                        <input type="text" name="NombreJugador8" id="NombreDeJugador8">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="Nombre de los jugadores">Nombre del jugador 9</label>
-                    </td>
-                    <td>
-                        <input type="text" name="NombreJugador9" id="NombreDeJugador9">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="Nombre de los jugadores">Nombre del jugador 10</label>
-                    </td>
-                    <td>
-                        <input type="text" name="NombreJugador10" id="NombreDeJugador10">
-                    </td>
-                </tr>
-            </table>
-        </fieldset>
-        <fieldset>
-            <table>
-                <tr>
-                    <td>
-                        <label for="cometarios">comentarios</label>
-                    </td>
-                    <td>
-                        <input class="grupotexto" type="text" name="comentarios" id="Comentarios">
-                    </td>
-                </tr>
-            </table>
-        </fieldset>
-        <button class="botones" type="reset">
-            Borrar
-        </button>
-        <button class="botones" type="submit">
-            Enviar
-        </button>
-    </form>
+    <div class="wrapper">
 
-    <div class="pie">
-        <!--la copiamos del index -->
-    </div>
+
+
+
+
+        <!--cabecera universal la copiamos de index-->
+        <div class="header">
+            <header class="cabecera">
+                <nav>
+                    <a href="index.html">Inicio</a>
+                    <a href="equipos.html">Equipos</a>
+                    <a href="torneos.html">Torneo</a>
+                    <a href="inscripciones.html">Inscripciones</a>
+                    <a href="organizadores.html">Organizadores</a>
+                </nav>
+            </header>
+        </div>
+        <form action="">
+            <fieldset>
+                <legend>
+                    Introduce los datos del equipo
+                </legend>
+                <p>
+                    <label for="Equipo">Equipo</label>
+                    <input type="text" name="Equipo" id="NombreEquipo" placeholder="Introduce el nombre del equipo">
+                </p>
+                <p>
+                    <label for="NombreEntrenador">Entrenador</label>
+                    <input type="text" name="Entrenador" id="NombreDeEntrenador"
+                        placeholder="Introduce el nombre del entrenador">
+                </p>
+                <p>
+                    <label for="NumeroJugadores">Numero de jugadores</label>
+                    <input type="number" name="NumeroJugadores" id="NumeroDeJugadores" min="5" max="10">
+                </p>
+                <p>
+                    <label for="NombreCapitan">Nombre del capitan</label>
+                    <input type="text" name="NombreCapitan" id="NombreDelCapitan">
+                </p>
+            </fieldset>
+            <div class="jugadores">
+                <h2>JUGADORES DEL EQUIPO</h2>
+                <p></p>
+
+
+            </div>
+            <div class="formulario">
+                <table>
+                    <tr>
+                        <p>
+                            <label for="cometarios">comentarios</label>
+                        </p>
+                        <p>
+                            <input class="grupotexto" type="text" name="comentarios" id="Comentarios">
+                        </p>
+                    </tr>
+                </table>
+                <button class="botones" type="reset">
+                    Borrar
+                </button>
+                <button class="botones" type="submit">
+                    Enviar
+                </button>
+            </div>
+        </form>
+
+        <div class="pie">
+            <!--la copiamos del index -->
+        </div>
     </div>
 </body>
 
