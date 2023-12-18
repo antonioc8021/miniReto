@@ -62,5 +62,12 @@ img
  }
  .botones {
   margin-bottom: 20px;
+ font-size: large;
+ background-color: brown;
+ }
+ .botones:hover{
+  background-color: #d4661d;
+  color:aliceblue;
+  box-shadow: inset;
  }
 
