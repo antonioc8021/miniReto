@@ -11,56 +11,70 @@
 
 <body>
     <!--cabecera universal la copiamos de index-->
-    <div class="cabecera">
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="equipos.html">Equipos</a>
-            <a href="inscripciones.html">Inscripciones</a>
-            <a href="organizadores.html">organizadores</a>
-            <a href="torneos.html">Torneo</a>
-        </nav>
+    <div class="header">
+        <header class="cabecera">
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="equipos.html">Equipos</a>
+                <a href="torneos.html">Torneo</a>
+                <a href="inscripciones.html">Inscripciones</a>
+                <a href="organizadores.html">Organizadores</a>
+            </nav>
+        </header>
     </div>
-                
-                
-    <fieldset>
-        <legend>
-            Introduce aqui tus datos
-        </legend>
-        <table>
-            <tr>
-                <td>
-                    <label for="Equipo">Equipo</label>
-                </td>
-                <td>
-                    <input type="text" name="Equipo" id="NombreEquipo" placeholder="Introduce el nombre del equipo">
-                </td>
-                <td>
-                    <label for="NombreEntrenador">Entrenador</label>
-                </td>
-                <td>
-                    <input type="text" name="Entrenador" id="NombreDeEntrenador"
-                        placeholder="Introduce el nombre del entrenador">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="NumeroJugadores">Numero de jugadores</label>
-                </td>
-                <td>
-                    <input type="number" name="NumeroJugadores" id="NumeroDeJugadores" min="5" max="10">
-                </td>
-                <td>
-                    <label for="NombreJugadores">Nombre de los jugadores</label>
-                </td>
-                <td>
-                    <input type="text" name="NombreJugadores" id="NombreDeJugadores">
-                </td>
-            </tr>
-        </table>
-    </fieldset>
-     <div class="pie">
-            <!--la copiamos del index -->
+    <form action="">
+        <fieldset>
+            <legend>
+                Introduce los datos del equipo
+            </legend>
+            <p>
+                <label for="Equipo">Equipo</label>
+                <input type="text" name="Equipo" id="NombreEquipo" placeholder="Introduce el nombre del equipo">
+            </p>
+            <p>
+                <label for="NombreEntrenador">Entrenador</label>
+                <input type="text" name="Entrenador" id="NombreDeEntrenador"
+                    placeholder="Introduce el nombre del entrenador">
+            </p>
+            <p>
+                <label for="NumeroJugadores">Numero de jugadores</label>
+                <input type="number" name="NumeroJugadores" id="NumeroDeJugadores" min="5" max="10">
+            </p>
+            <p>
+                <label for="NombreCapitan">Nombre del capitan</label>
+                <input type="text" name="NombreCapitan" id="NombreDelCapitan">
+            </p>
+        </fieldset>
+        <div class="jugadores">
+            <h2>JUGADORES DEL EQUIPO</h2>
+            <p></p>
+
+
         </div>
+        <fieldset>
+            <table>
+                <tr>
+                    <p>
+                        <label for="cometarios">comentarios</label>
+                    </p>
+                    <p>
+                        <input class="grupotexto" type="text" name="comentarios" id="Comentarios">
+                    </p>
+                </tr>
+            </table>
+        </fieldset>
+        <button class="botones" type="reset">
+            Borrar
+        </button>
+        <button class="botones" type="submit">
+            Enviar
+        </button>
+    </form>
+
+    <div class="pie">
+        <!--la copiamos del index -->
+    </div>
+>>>>>>> 07f107c730a6887bbf0afcf4a781e5d479bf929e
     </div>
 </body>
 
