@@ -53,268 +53,268 @@ a {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.equipo img {}
+
 .equipo img {
+  width: 40%;
+  height: 40%;
+}
 
-  .equipo img {
-    width: 40%;
-    height: 40%;
-  }
-
-  .galeria img {
-    width: 100%;
-    height: 900px;
-    margin-bottom: 50px;
-  }
+.galeria img {
+  width: 100%;
+  height: 900px;
+  margin-bottom: 50px;
+}
 
 
-  .equipo {
-    border: 1px solid #ddd;
-    padding: 10px;
-    margin-bottom: 20px;
-  }
+.equipo {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 20px;
+}
 
-  footer {
-    display: flex;
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1em;
-  }
-
-
-  /*Estilo carrusel de imagenes*/
-
-  .carrusel {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-  }
-
-  .carrusel-container {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-  }
-
-  .carrusel-item {
-    min-width: 100%;
-  }
-
-  .carrusel-item img {
-    width: 50%;
-    height: auto;
-  }
-
-  .carrusel-prev,
-  .carrusel-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 24px;
-    cursor: pointer;
-    border: none;
-    background: none;
-    outline: none;
-  }
-
-  .carousel-item img {
-    max-width: 300px;
-    /* Ajustar el tamaño máximo de las imágenes */
-    height: 300px;
-  }
-
-  /* estilos para los organizadores */
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .cuerpo .profesores {
-    text-align: center;
-    display: flex;
-  }
-
-  .profesores img {
-    height: 100%;
-    width: 100%;
-  }
-
-  /* Estilos para la sección de pie (footer) */
-  .pie {
-    padding: 0.3em;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-  }
-
-  .pie img {
-    height: 50px;
-    width: auto;
-    margin-bottom: 10px;
-  }
-
-  .contacto img {
-    max-height: 100px;
-    width: auto;
-  }
-
-  .FYQ {
-    text-align: left;
-    padding: 0;
-    margin-top: 0%;
-    width: 100%;
-  }
-
-  .FYQ h3 {
-    text-decoration: underline;
-  }
-
-  /* Estilos para el enlace dentro de la sección FYQ */
-  .FYQ h3 a {
-    text-decoration: none;
-    color: inherit;
-    /* Tomar el color del texto del contenedor padre (sin color de enlace) */
-  }
+footer {
+  display: flex;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
 
 
-  /* Estilos para las columnas de imágenes */
-  .columnas {
-    display: flex;
-    flex-wrap: wrap;
-  }
+/*Estilo carrusel de imagenes*/
 
-  /* Estilos para cada columna de imágenes */
-  .columna {
-    width: 100%;
-    /* Ajustar el ancho para que haya espacio para tres columnas */
-    box-sizing: border-box;
-    /* Evita que el padding y el borde afecten el ancho total */
-    padding: 10px;
-    /* Agrega un poco de espacio entre las imágenes */
-  }
+.carrusel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
 
-  /* Añadir estilos adicionales según sea necesario */
-  .columna img {
-    width: 30%;
-    /* Hace que las imágenes ocupen el 100% del ancho de su contenedor */
-    height: auto;
-    /* Mantiene la proporción de la imagen */
-  }
+.carrusel-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
 
+.carrusel-item {
+  min-width: 100%;
+}
 
-  /* estilos para los organizadores */
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-  }
+.carrusel-item img {
+  width: 50%;
+  height: auto;
+}
 
-  .cuerpo .profesores {
-    text-align: center;
-    display: flex;
-  }
+.carrusel-prev,
+.carrusel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  outline: none;
+}
 
-  .profesores img {
-    height: 100%;
-    width: 100%;
-  }
+.carousel-item img {
+  max-width: 300px;
+  /* Ajustar el tamaño máximo de las imágenes */
+  height: 300px;
+}
 
-  /* Estilos para la sección de pie (footer) */
-  .pie {
-    padding: 0.3em;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-  }
+/* estilos para los organizadores */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
 
-  .pie img {
-    height: 50px;
-    width: auto;
-    margin-bottom: 10px;
-  }
+.cuerpo .profesores {
+  text-align: center;
+  display: flex;
+}
 
-  .contacto img {
-    max-height: 100px;
-    width: auto;
-  }
+.profesores img {
+  height: 100%;
+  width: 100%;
+}
 
-  .FYQ {
-    text-align: left;
-    padding: 0;
-    margin-top: 0%;
-    width: 100%;
-  }
+/* Estilos para la sección de pie (footer) */
+.pie {
+  padding: 0.3em;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
 
-  .FYQ h3 {
-    text-decoration: underline;
-  }
+.pie img {
+  height: 50px;
+  width: auto;
+  margin-bottom: 10px;
+}
 
-  /* Estilos para el enlace dentro de la sección FYQ */
-  .FYQ h3 a {
-    text-decoration: none;
-    color: inherit;
-    /* Tomar el color del texto del contenedor padre (sin color de enlace) */
-  }
+.contacto img {
+  max-height: 100px;
+  width: auto;
+}
 
+.FYQ {
+  text-align: left;
+  padding: 0;
+  margin-top: 0%;
+  width: 100%;
+}
 
-  /* Estilos para las columnas de imágenes */
-  .columnas {
-    display: flex;
-    flex-wrap: wrap;
-  }
+.FYQ h3 {
+  text-decoration: underline;
+}
 
-  /* Estilos para cada columna de imágenes */
-  .columna {
-    width: 100%;
-    /* Ajustar el ancho para que haya espacio para tres columnas */
-    box-sizing: border-box;
-    /* Evita que el padding y el borde afecten el ancho total */
-    padding: 10px;
-    /* Agrega un poco de espacio entre las imágenes */
-  }
-
-  /* Añadir estilos adicionales según sea necesario */
-  .columna img {
-    width: 30%;
-    /* Hace que las imágenes ocupen el 100% del ancho de su contenedor */
-    height: auto;
-    /* Mantiene la proporción de la imagen */
-  }
+/* Estilos para el enlace dentro de la sección FYQ */
+.FYQ h3 a {
+  text-decoration: none;
+  color: inherit;
+  /* Tomar el color del texto del contenedor padre (sin color de enlace) */
+}
 
 
-  .carrusel-next {
-    right: 10px;
-  }
+/* Estilos para las columnas de imágenes */
+.columnas {
+  display: flex;
+  flex-wrap: wrap;
+}
 
-  /*
+/* Estilos para cada columna de imágenes */
+.columna {
+  width: 100%;
+  /* Ajustar el ancho para que haya espacio para tres columnas */
+  box-sizing: border-box;
+  /* Evita que el padding y el borde afecten el ancho total */
+  padding: 10px;
+  /* Agrega un poco de espacio entre las imágenes */
+}
+
+/* Añadir estilos adicionales según sea necesario */
+.columna img {
+  width: 30%;
+  /* Hace que las imágenes ocupen el 100% del ancho de su contenedor */
+  height: auto;
+  /* Mantiene la proporción de la imagen */
+}
+
+
+/* estilos para los organizadores */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.cuerpo .profesores {
+  text-align: center;
+  display: flex;
+}
+
+.profesores img {
+  height: 100%;
+  width: 100%;
+}
+
+/* Estilos para la sección de pie (footer) */
+.pie {
+  padding: 0.3em;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.pie img {
+  height: 50px;
+  width: auto;
+  margin-bottom: 10px;
+}
+
+.contacto img {
+  max-height: 100px;
+  width: auto;
+}
+
+.FYQ {
+  text-align: left;
+  padding: 0;
+  margin-top: 0%;
+  width: 100%;
+}
+
+.FYQ h3 {
+  text-decoration: underline;
+}
+
+/* Estilos para el enlace dentro de la sección FYQ */
+.FYQ h3 a {
+  text-decoration: none;
+  color: inherit;
+  /* Tomar el color del texto del contenedor padre (sin color de enlace) */
+}
+
+
+/* Estilos para las columnas de imágenes */
+.columnas {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Estilos para cada columna de imágenes */
+.columna {
+  width: 100%;
+  /* Ajustar el ancho para que haya espacio para tres columnas */
+  box-sizing: border-box;
+  /* Evita que el padding y el borde afecten el ancho total */
+  padding: 10px;
+  /* Agrega un poco de espacio entre las imágenes */
+}
+
+/* Añadir estilos adicionales según sea necesario */
+.columna img {
+  width: 80%;
+  /* Hace que las imágenes ocupen el 100% del ancho de su contenedor */
+  height: auto;
+  /* Mantiene la proporción de la imagen */
+}
+
+
+.carrusel-next {
+  right: 10px;
+}
+
+/*
 estilos para el formulario */
-  .fieldset {
-    border-radius: 20px;
-    border: 2px solid black;
-    margin-bottom: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+.fieldset {
+  border-radius: 20px;
+  border: 2px solid black;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  .legend {
-    text-decoration: underline;
-    color: rgb(90, 207, 54);
-    font-weight: bold;
-  }
+.legend {
+  text-decoration: underline;
+  color: rgb(90, 207, 54);
+  font-weight: bold;
+}
 
-  .jugadores {
-    text-decoration: underline;
-    color: rgb(90, 207, 54);
-    font-weight: bold;
-  }
+.jugadores {
+  text-decoration: underline;
+  color: rgb(90, 207, 54);
+  font-weight: bold;
+}
 
-  .botones {
-    margin-bottom: 20px;
-    font-size: large;
-    background-color: brown;
-  }
+.botones {
+  margin-bottom: 20px;
+  font-size: large;
+  background-color: brown;
+}
 
-  .botones:hover {
-    background-color: #d4661d;
-    color: aliceblue;
-    box-shadow: inset;
-  }
+.botones:hover {
+  background-color: #d4661d;
+  color: aliceblue;
+  box-shadow: inset;
+}
