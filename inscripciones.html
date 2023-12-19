@@ -26,16 +26,15 @@
         </div>
         <div class="contenido">
             <form action="">
-                <div class="fieldset">
-                    <h2 class="legend">Introduce los datos del equipo</h2>
+                <h2 class="legend">Introduce los datos del equipo</h2>
+                <div class="equipo">
                     <p>
                         <label for="Equipo">Equipo</label>
-                        <input type="text" name="Equipo" id="NombreEquipo" placeholder="Introduce el nombre del equipo">
+                        <input type="text" name="Equipo" id="NombreEquipo">
                     </p>
                     <p>
                         <label for="NombreEntrenador">Entrenador</label>
-                        <input type="text" name="Entrenador" id="NombreDeEntrenador"
-                            placeholder="Introduce el nombre del entrenador">
+                        <input type="text" name="Entrenador" id="NombreDeEntrenador">
                     </p>
                     <p>
                         <label for="NumeroJugadores">Numero de jugadores</label>
@@ -48,16 +47,17 @@
                 </div>
 
 
+                <h2>JUGADORES DEL EQUIPO</h2>
                 <div class="jugadores">
-                    <h2>JUGADORES DEL EQUIPO</h2>
                     <div class="jugador">
                         <h3>Jugador 1</h3>
                         <p><label for="Nombre">Nombre</label> <input type="text" name="nombre1" id="nombre1"></p>
                         <p><label for="Apellido">Apellido</label> <input type="text" name="apellido1" id="apellido1">
                         </p>
                         <p><label for="Edad">Edad</label> <input type="number" name="edad1" id="edad1"></p>
+                        <p></p>
                     </div>
-                    <div>
+                    <div class="jugador">
                         <h3>Jugador 2</h3>
                         <p><label for="Nombre">Nombre</label> <input type="text" name="nombre2" id="nombre2" required>
                         </p>
@@ -65,7 +65,7 @@
                                 required></p>
                         <p><label for="Edad">Edad</label> <input type="number" name="edad2" id="edad2" required></p>
                     </div>
-                    <div>
+                    <div class="jugador">
                         <h3>Jugador 3</h3>
                         <p><label for="Nombre">Nombre</label><input type="text" name="nombre3" id="nombre3" required>
                         </p>
@@ -73,7 +73,7 @@
                                 required></p>
                         <p><label for="Edad">Edad</label> <input type="text" name="edad3" id="edad3" required></p>
                     </div>
-                    <div>
+                    <div class="jugador">
                         <h3>Jugador 4</h3>
                         <p><label for="Nombre">Nombre</label> <input type="text" name="nombre4" id="nombre4" required>
                         </p>
@@ -81,7 +81,7 @@
                                 required></p>
                         <p><label for="Edad">Edad</label><input type="text" name="edad4" id="edad4" required></p>
                     </div>
-                    <div>
+                    <div class="jugador">
                         <h3>Jugador 5</h3>
                         <p><label for="Nombre">Nombre</label> <input type="text" name="nombre5" id="nombre5" required>
                         </p>
@@ -89,35 +89,35 @@
                                 required></p>
                         <p><label for="Edad">Edad</label> <input type="text" name="edad5" id="edad5" required></p>
                     </div>
-                    <div>
+                    <div class="jugador">
                         <h3>Jugador 6</h3>
                         <p><label for="Nombre">Nombre</label> <input type="text" name="nombre6" id="nombre6"></p>
                         <p><label for="Apellido">Apellido</label> <input type="text" name="apellido6" id="apellido6">
                         </p>
                         <p><label for="Edad">Edad</label> <input type="text" name="edad6" id="edad6"></p>
                     </div>
-                    <div>
+                    <div class="jugador">
                         <h3>Jugador 7</h3>
                         <p><label for="Nombre">Nombre</label> <input type="text" name="nombre7" id="nombre7"></p>
                         <p><label for="Apellido">Apellido</label> <input type="text" name="apellido7" id="apellido7">
                         </p>
                         <p><label for="Edad">Edad</label> <input type="text" name="edad7" id="edad7"></p>
                     </div>
-                    <div>
+                    <div class="jugador">
                         <h3>Jugador 8</h3>
                         <p><label for="Nombre">Nombre</label> <input type="text" name="nombre8" id="nombre8"></p>
                         <p><label for="Apellido">Apellido</label> <input type="text" name="apellido8" id="apellido8">
                         </p>
                         <p><label for="Edad">Edad</label> <input type="text" name="edad8" id="edad8"></p>
                     </div>
-                    <div>
+                    <div class="jugador">
                         <h3>Jugador 9</h3>
                         <p><label for="Nombre">Nombre</label> <input type="text" name="nombre9" id="nombre9"></p>
                         <p><label for="Apellido">Apellido</label> <input type="text" name="apellido9" id="apellido9">
                         </p>
                         <p><label for="Edad">Edad</label> <input type="text" name="edad9" id="edad9"></p>
                     </div>
-                    <div>
+                    <div class="jugador">
                         <h3>Jugador 10</h3>
                         <p><label for="Nombre">Nombre</label> <input type="text" name="nombre10" id="nombre10"></p>
                         <p><label for="Apellido">Apellido</label> <input type="text" name="apellido10" id="apellido10">
@@ -126,7 +126,7 @@
                     </div>
                 </div>
                 <div class="formulario">
-                    <table>s
+                    <table>
                         <tr>
                             <p>
                                 <label for="cometarios">comentarios</label>
@@ -136,12 +136,8 @@
                             </p>
                         </tr>
                     </table>
-                    <button class="botones" type="reset">
-                        Borrar
-                    </button>
-                    <button class="botones" type="submit">
-                        Enviar
-                    </button>
+                    <input type="reset" value="Borrar" name="borrar" id="borrar">
+                    <input type="submit" value="Enviar" name="enviar" id="enviar">
                 </div>
             </form>
 
