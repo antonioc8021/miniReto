@@ -26,12 +26,44 @@
         <div class="galeria">
             <img src="./Imagenes/imagen_galeria.jpg" alt="Imagen">
         </div>
-        <div class="carrusel_videos">
-            
-        </div>
+
+        <main>
+          <section class="carrusel" id="miCarrusel">
+            <div class="carrusel-container">
+              <div class="carrusel-item">
+                <img src="./Imagenes/carrusel1.jpg" alt="Imagen 1">
+              </div>
+              <div class="carrusel-item">
+                <img src="./Imagenes/carrusel2.jpg" alt="Imagen 2">
+              </div>
+              <!-- Agrega más imágenes según sea necesario -->
+            </div>
+            <button class="carrusel-prev" onclick="cambiarImagen(-1)">&#10094;</button>
+            <button class="carrusel-next" onclick="cambiarImagen(1)">&#10095;</button>
+          </section>
+        </main>
+        <script src="carrusel.js"></script>
+          
+          <section class="objetivos-patrocinadores">
+            <h2>Objetivos del Torneo</h2>
+            <p>Descripción de los objetivos...</p>
+            <h2>Patrocinadores</h2>
+            <p>Lista de patrocinadores...</p>
+          </section>
+        </main>
         <!--en el cuerpo pondremos los videos(noticias), los objetivos que se tienen con el torneo y los patrocinadores-->
     </div> 
-
+    <footer>
+        <section class="informacion-contacto">
+          <h2>Contacto</h2>
+          <p>Información de contacto...</p>
+        </section>
+        <section class="preguntas-frecuentes">
+          <h2>Preguntas Frecuentes</h2>
+          <p>Respuestas a preguntas comunes...</p>
+        </section>
+        <p>&copy; 2023 Torneo Benéfico de Fútbol IES Augusto Gonzaléz de Linares. Todos los derechos reservados.</p>
+      </footer>
     <div class="pie">
             <!--pie universal, le crearemos aqui despues copiamos, usamos contacto - redes sociales - preguntas frecuentes -->
     </div>

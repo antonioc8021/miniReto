@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;900&display=swap');
 header 
 {
     padding: 10px;
@@ -5,39 +6,58 @@ header
     text-align: center;
 }
 
-body 
-{
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Ajustes para el contenido debajo del menú fijo */
+body {
+  margin: 0;
+  padding-top: 0px; /* Ajusta este valor para dejar espacio para el menú fijo */
+  box-sizing: border-box;
 }
-  
-nav a 
+/* Estilos para el menú fijo */
+.cabecera {
+  background-color: #333;
+  padding: 15px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.3s; /* Agregamos transición para el cambio de color */
+}
+.cabecera a {
+  color: white;
+  font-family: 'Roboto';
+  font-weight: bolder;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 5px;
+  position: relative;
+}
+/* Cambiar color del menú al pasar el cursor */
+.cabecera a:hover {
+  background-color: #555;
+}
+/* Añade un espacio al cuerpo para evitar solapamiento con el menú fijo */
+.main-content {
+  padding-top: 80px; /* Ajusta este valor según sea necesario */
+}
+a
 {
-    color:black;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: bolder;
-    font-size: 18px;
-    text-decoration: none;
-    padding: 10px 20px;
-    margin: 0 10px;
-    border-radius: 5px;
-    position: relative;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.galeria img 
-{
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-img
-{
+.equipo img {
   width: 40%;
   height: 40%;
 }
+
+.galeria img {
+  width: 100%;
+  height: 900px;
+  margin-bottom: 50px;
+}
+
 
 .equipo {
   border: 1px solid #ddd;
@@ -45,8 +65,56 @@ img
   margin-bottom: 20px;
 }
 
-/* estilos para el formulario */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
 
+/*Estilo carrusel de imagenes*/
+
+.carrusel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carrusel-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carrusel-item {
+  min-width: 100%;
+}
+
+.carrusel-item img {
+  width: 50%;
+  height: auto;
+}
+
+.carrusel-prev,
+.carrusel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.carrusel-prev {
+  left: 10px;
+}
+
+.carrusel-next {
+  right: 10px;
+}
+/*
+estilos para el formulario */
 .fieldset {
   border-radius: 20px;
   border: 2px solid black;
@@ -56,6 +124,11 @@ img
   align-items: center;
  }
  .legend {
+  text-decoration: underline;
+  color: rgb(90, 207, 54);
+  font-weight: bold;
+ }
+ .jugadores {
   text-decoration: underline;
   color: rgb(90, 207, 54);
   font-weight: bold;
