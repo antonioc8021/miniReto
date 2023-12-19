@@ -46,8 +46,8 @@ a
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
 }
-.equipo img
-{
+
+.equipo img {
   width: 40%;
   height: 40%;
 }
@@ -71,6 +71,7 @@ footer {
   text-align: center;
   padding: 1em;
 }
+
 /*Estilo carrusel de imagenes*/
 
 .carrusel {
@@ -87,8 +88,8 @@ footer {
 .carrusel-item {
   min-width: 100%;
 }
-.carrusel-item img
-{
+
+.carrusel-item img {
   width: 50%;
   height: auto;
 }
@@ -112,7 +113,7 @@ footer {
 .carrusel-next {
   right: 10px;
 }
-/* 
+/*
 estilos para el formulario */
 .fieldset {
   border-radius: 20px;
@@ -142,4 +143,3 @@ estilos para el formulario */
   color:aliceblue;
   box-shadow: inset;
  }
-
