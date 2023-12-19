@@ -47,4 +47,4 @@ function mostrarImagen() {
 // Establece un intervalo para cambiar automáticamente las imágenes cada 5 segundos
 setInterval(function () {
     cambiarImagen(1);
-}, 5000);
+}, 3000);
