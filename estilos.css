@@ -1,17 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;900&display=swap');
-header 
-{
-    padding: 10px;
-    margin-bottom: 10px;
-    text-align: center;
+
+header {
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
-/* Ajustes para el contenido debajo del menú fijo */
 body {
+  font-family: 'Arial', sans-serif;
   margin: 0;
-  padding-top: 0px; /* Ajusta este valor para dejar espacio para el menú fijo */
+  padding: 0;
   box-sizing: border-box;
 }
+
 /* Estilos para el menú fijo */
 .cabecera {
   background-color: #333;
@@ -20,8 +21,10 @@ body {
   width: 100%;
   top: 0;
   z-index: 1000;
-  transition: background-color 0.3s; /* Agregamos transición para el cambio de color */
+  transition: background-color 0.3s;
+  /* Agregamos transición para el cambio de color */
 }
+
 .cabecera a {
   color: white;
   font-family: 'Roboto';
@@ -33,19 +36,24 @@ body {
   border-radius: 5px;
   position: relative;
 }
+
 /* Cambiar color del menú al pasar el cursor */
 .cabecera a:hover {
   background-color: #555;
 }
+
 /* Añade un espacio al cuerpo para evitar solapamiento con el menú fijo */
 .main-content {
-  padding-top: 80px; /* Ajusta este valor según sea necesario */
+  padding-top: 80px;
+  /* Ajusta este valor según sea necesario */
 }
-a
-{
+
+a {
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.equipo img {}
 
 .equipo img {
   width: 40%;
@@ -66,11 +74,13 @@ a
 }
 
 footer {
+  display: flex;
   background-color: #333;
   color: white;
   text-align: center;
   padding: 1em;
 }
+
 
 /*Estilo carrusel de imagenes*/
 
@@ -106,13 +116,184 @@ footer {
   outline: none;
 }
 
-.carrusel-prev {
-  left: 10px;
+.carousel-item img {
+  max-width: 300px;
+  /* Ajustar el tamaño máximo de las imágenes */
+  height: 300px;
 }
+
+/* estilos para los organizadores */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.cuerpo .profesores {
+  text-align: center;
+  display: flex;
+}
+
+.profesores img {
+  height: 100%;
+  width: 100%;
+}
+
+/* Estilos para la sección de pie (footer) */
+.pie {
+  padding: 0.3em;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.pie img {
+  height: 50px;
+  width: auto;
+  margin-bottom: 10px;
+}
+
+.contacto img {
+  max-height: 100px;
+  width: auto;
+}
+
+.FYQ {
+  text-align: left;
+  padding: 0;
+  margin-top: 0%;
+  width: 100%;
+}
+
+.FYQ h3 {
+  text-decoration: underline;
+}
+
+/* Estilos para el enlace dentro de la sección FYQ */
+.FYQ h3 a {
+  text-decoration: none;
+  color: inherit;
+  /* Tomar el color del texto del contenedor padre (sin color de enlace) */
+}
+
+
+/* Estilos para las columnas de imágenes */
+.columnas {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Estilos para cada columna de imágenes */
+.columna {
+  width: 100%;
+  /* Ajustar el ancho para que haya espacio para tres columnas */
+  box-sizing: border-box;
+  /* Evita que el padding y el borde afecten el ancho total */
+  padding: 10px;
+  /* Agrega un poco de espacio entre las imágenes */
+}
+
+/* Añadir estilos adicionales según sea necesario */
+.columna img {
+  width: 30%;
+  /* Hace que las imágenes ocupen el 100% del ancho de su contenedor */
+  height: auto;
+  /* Mantiene la proporción de la imagen */
+}
+
+
+/* estilos para los organizadores */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.cuerpo .profesores {
+  text-align: center;
+  display: flex;
+}
+
+.profesores img {
+  height: 100%;
+  width: 100%;
+}
+
+/* Estilos para la sección de pie (footer) */
+.pie {
+  padding: 0.3em;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.pie img {
+  height: 50px;
+  width: auto;
+  margin-bottom: 10px;
+}
+
+.contacto img {
+  max-height: 100px;
+  width: auto;
+}
+
+/* Estilos para la sección de preguntas frecuentes (FYQ) */
+.FYQ {
+  text-align: left;
+  padding: 0;
+  margin-top: 0%;
+
+}
+
+.PreguntasFrec {
+  text-align: center;
+  background-color: #09941b;
+  margin-bottom: 0.2em;
+}
+
+/* Estilos para el título h3 dentro de FYQ */
+.FYQ h2 {
+  color: aliceblue;
+  text-decoration: underline;
+}
+
+/* Estilos para el enlace dentro de FYQ */
+.FYQ a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Estilos para las columnas de preguntas frecuentes */
+.columnas {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Estilos para cada columna de preguntas frecuentes */
+.columna {
+  overflow: auto;
+  flex: 1;
+  width: 40%;
+  /* Ajustar según sea necesario */
+  box-sizing: border-box;
+  /* Evitar que el padding y el borde afecten el ancho total */
+  padding: 10px;
+  /* Agregar un poco de espacio entre las columnas */
+  font-size: small;
+}
+
+/* Añadir estilos adicionales según sea necesario */
+.columna img {
+  width: 80%;
+  /* Hace que las imágenes ocupen el 100% del ancho de su contenedor */
+  height: auto;
+  /* Mantiene la proporción de la imagen */
+}
+
 
 .carrusel-next {
   right: 10px;
 }
+
 /*
 estilos para el formulario */
 .fieldset {
@@ -122,24 +303,28 @@ estilos para el formulario */
   display: flex;
   flex-direction: column;
   align-items: center;
- }
- .legend {
+}
+
+.legend {
   text-decoration: underline;
   color: rgb(90, 207, 54);
   font-weight: bold;
- }
- .jugadores {
+}
+
+.jugadores {
   text-decoration: underline;
   color: rgb(90, 207, 54);
   font-weight: bold;
- }
- .botones {
+}
+
+.botones {
   margin-bottom: 20px;
- font-size: large;
- background-color: brown;
- }
- .botones:hover{
+  font-size: large;
+  background-color: brown;
+}
+
+.botones:hover {
   background-color: #d4661d;
-  color:aliceblue;
+  color: aliceblue;
   box-shadow: inset;
- }
+}
