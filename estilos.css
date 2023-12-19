@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@100;900&display=swap');
 
 header {
   padding: 10px;
@@ -6,8 +7,9 @@ header {
   text-align: center;
 }
 
+/* Ajustes para el contenido debajo del menú fijo */
 body {
-  font-family: 'Arial', sans-serif;
+
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -48,16 +50,19 @@ body {
   /* Ajusta este valor según sea necesario */
 }
 
+main h1 {
+  text-decoration: underline;
+  text-align: center;
+}
+
 a {
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.equipo img {}
-
 .equipo img {
   width: 40%;
-  height: 40%;
+  height: 50%;
 }
 
 .galeria img {
@@ -65,7 +70,6 @@ a {
   height: 900px;
   margin-bottom: 50px;
 }
-
 
 .equipo {
   border: 1px solid #ddd;
@@ -88,6 +92,7 @@ footer {
   position: relative;
   width: 100%;
   overflow: hidden;
+  margin-bottom: 0px;
 }
 
 .carrusel-container {
@@ -102,24 +107,7 @@ footer {
 .carrusel-item img {
   width: 50%;
   height: auto;
-}
-
-.carrusel-prev,
-.carrusel-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 24px;
-  cursor: pointer;
-  border: none;
-  background: none;
-  outline: none;
-}
-
-.carousel-item img {
-  max-width: 300px;
-  /* Ajustar el tamaño máximo de las imágenes */
-  height: 300px;
+  margin-left: 25%;
 }
 
 /* estilos para los organizadores */
@@ -160,8 +148,8 @@ footer {
 .FYQ {
   text-align: left;
   padding: 0;
-  margin-top: 5%;
-  width: 100%;
+  margin-top: 0%;
+  width: 20%;
 }
 
 .FYQ h3 {
@@ -287,11 +275,6 @@ footer {
   /* Hace que las imágenes ocupen el 100% del ancho de su contenedor */
   height: auto;
   /* Mantiene la proporción de la imagen */
-}
-
-
-.carrusel-next {
-  right: 10px;
 }
 
 /*
