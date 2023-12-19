@@ -37,9 +37,9 @@ a
 }
 
 .galeria img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 100px;
+  width: 100%;
+  height: 900px;
+  margin-bottom: 50px;
 }
 
 
@@ -56,29 +56,46 @@ footer {
   padding: 1em;
 }
 /*Estilo carrusel de imagenes*/
+
 .carrusel {
+  position: relative;
+  width: 100%;
   overflow: hidden;
 }
 
-#carrusel {
+.carrusel-container {
   display: flex;
-  flex-direction: row; /* Hacer que el carrusel vaya lateralmente */
-  overflow-x: scroll;  /* Permitir desplazamiento horizontal */
+  transition: transform 0.5s ease-in-out;
 }
 
-.carousel-inner {
-  display: flex;
+.carrusel-item {
+  min-width: 100%;
+}
+.carrusel-item img
+{
+  width: 50%;
+  height: auto;
 }
 
-.carousel-item {
-  flex: 0 0 auto; /* Evitar que las imágenes se ajusten */
+.carrusel-prev,
+.carrusel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  outline: none;
 }
 
-.carousel-item img {
-  max-width: 300px; /* Ajustar el tamaño máximo de las imágenes */
-  height: 300px;
+.carrusel-prev {
+  left: 10px;
 }
 
+.carrusel-next {
+  right: 10px;
+}
 /* estilos para el formulario */
 
 .fieldset {
