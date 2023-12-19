@@ -236,39 +236,48 @@ footer {
   width: auto;
 }
 
+/* Estilos para la sección de preguntas frecuentes (FYQ) */
 .FYQ {
   text-align: left;
   padding: 0;
   margin-top: 0%;
-  width: 100%;
+
 }
 
+.PreguntasFrec {
+  text-align: center;
+  background-color: #09941b;
+  margin-bottom: 0.2em;
+}
+
+/* Estilos para el título h3 dentro de FYQ */
 .FYQ h3 {
   text-decoration: underline;
 }
 
-/* Estilos para el enlace dentro de la sección FYQ */
-.FYQ h3 a {
+/* Estilos para el enlace dentro de FYQ */
+.FYQ a {
   text-decoration: none;
   color: inherit;
-  /* Tomar el color del texto del contenedor padre (sin color de enlace) */
 }
 
-
-/* Estilos para las columnas de imágenes */
+/* Estilos para las columnas de preguntas frecuentes */
 .columnas {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-/* Estilos para cada columna de imágenes */
+/* Estilos para cada columna de preguntas frecuentes */
 .columna {
-  width: 100%;
-  /* Ajustar el ancho para que haya espacio para tres columnas */
+  overflow: auto;
+  flex: 1;
+  width: 40%;
+  /* Ajustar según sea necesario */
   box-sizing: border-box;
-  /* Evita que el padding y el borde afecten el ancho total */
+  /* Evitar que el padding y el borde afecten el ancho total */
   padding: 10px;
-  /* Agrega un poco de espacio entre las imágenes */
+  /* Agregar un poco de espacio entre las columnas */
+  font-size: small;
 }
 
 /* Añadir estilos adicionales según sea necesario */
