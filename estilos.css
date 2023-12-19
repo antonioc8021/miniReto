@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;900&display=swap');
 header 
 {
     padding: 10px;
@@ -5,25 +6,40 @@ header
     text-align: center;
 }
 
-body 
-{
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Ajustes para el contenido debajo del menú fijo */
+body {
+  margin: 0;
+  padding-top: 0px; /* Ajusta este valor para dejar espacio para el menú fijo */
+  box-sizing: border-box;
 }
-  
-nav a 
-{
-    color:black;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: bolder;
-    font-size: 18px;
-    text-decoration: none;
-    padding: 10px 20px;
-    margin: 0 10px;
-    border-radius: 5px;
-    position: relative;
+/* Estilos para el menú fijo */
+.cabecera {
+  background-color: #333;
+  padding: 15px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.3s; /* Agregamos transición para el cambio de color */
+}
+.cabecera a {
+  color: white;
+  font-family: 'Roboto';
+  font-weight: bolder;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 5px;
+  position: relative;
+}
+/* Cambiar color del menú al pasar el cursor */
+.cabecera a:hover {
+  background-color: #555;
+}
+/* Añade un espacio al cuerpo para evitar solapamiento con el menú fijo */
+.main-content {
+  padding-top: 80px; /* Ajusta este valor según sea necesario */
 }
 a
 {
@@ -96,8 +112,8 @@ footer {
 .carrusel-next {
   right: 10px;
 }
-/* estilos para el formulario */
-/*
+/* 
+estilos para el formulario */
 .fieldset {
   border-radius: 20px;
   border: 2px solid black;
@@ -126,4 +142,4 @@ footer {
   color:aliceblue;
   box-shadow: inset;
  }
-*/
+
