@@ -251,7 +251,8 @@ footer {
 }
 
 /* Estilos para el título h3 dentro de FYQ */
-.FYQ h3 {
+.FYQ h2 {
+  color: aliceblue;
   text-decoration: underline;
 }
 
