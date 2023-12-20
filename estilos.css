@@ -392,13 +392,17 @@ h4 {
 /* Patrocinadores */
 .patrocinadores {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
 
 }
 
-.patrocinadores img {
+.patrocinador {
+  margin-bottom: 2em;
+}
+
+.patrocinador img {
   /* esto es temporal para poder ver de forma correcta los patros */
-  height: 50px;
-  width: 50px;
+  height: 6em;
+  width: auto;
 }
