@@ -26,6 +26,11 @@ nav a {
     position: relative;
 }
 
+h2 {
+    font-size: 2.5em;
+    color: black;
+}
+
 a {
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
@@ -68,14 +73,6 @@ a {
 
 input {
     border-radius: 0.5em;
-}
-
-
-.jugador input[type="text"] {
-    /* width: 100%; */
-    /* Hace que el input se ajuste al 100% del ancho del contenedor */
-    /* box-sizing: border-box; */
-    /* Incluye el padding y el borde en el ancho total */
 }
 
 .formulario {
