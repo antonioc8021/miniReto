@@ -9,14 +9,23 @@ header {
 
 /* Ajustes para el contenido debajo del menú fijo */
 body {
-
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.cuerpo {
-  padding-top: 80px;
+.section {
+  height: 100vh;
+  width: 100%;
+  font-size: 2em;
+  transition: transform 0.8s ease-in-out;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#section2 {
+  background-color: white;
 }
 
 /* Estilos para el menú fijo */
@@ -58,9 +67,14 @@ body {
 main h1 {
   text-decoration: underline;
   text-align: center;
+  margin-top: 200px;
 }
 
-
+.objetivos-patrocinadores h1 {
+  text-decoration: underline;
+  text-align: center;
+  margin-top: 100px;
+}
 
 a {
   text-decoration: none;
@@ -74,8 +88,8 @@ a {
 
 .galeria img {
   width: 100%;
-  height: 900px;
-  margin-bottom: 50px;
+  height: 950px;
+  margin-bottom: 20px;
 }
 
 .equipo {
@@ -93,13 +107,13 @@ footer {
 }
 
 
-/*Estilo carrusel de imagenes*/
-
+/* Estilo carrusel horizontal */
 .carrusel {
   position: relative;
   width: 100%;
   overflow: hidden;
-  margin-bottom: 0px;
+  margin-bottom: 20px;
+  /* Agregamos un margen inferior para separar del siguiente contenido */
 }
 
 .carrusel-container {
@@ -113,6 +127,7 @@ footer {
 
 .carrusel-item img {
   width: 50%;
+  /* Ajustamos el ancho de la imagen al 100% */
   height: auto;
   margin-left: 25%;
 }
@@ -137,7 +152,7 @@ footer {
 }
 
 /* Estilos para la sección de pie (footer) */
-/* Estilos para la sección de pie (footer) */
+
 .pie {
   padding: 0.3em;
   text-align: center;
@@ -165,58 +180,103 @@ footer {
   width: auto;
 }
 
-
-/* Estilos para la sección de preguntas frecuentes (FYQ) */
-.wrapperfyq {
-  display: flex;
-  flex-direction: column;
-  background-color: #cdd597;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100%;
-  width: auto;
-}
-
-.FYQ {
-  text-align: left;
-  padding: 0.2em;
-  /* Ajusta el espacio interno según sea necesario */
-  margin-top: 0.4em;
-  /* Ajusta el margen superior según sea necesario */
-}
-
 .PreguntasFrec {
   text-align: center;
+  background-color: #09941b;
   margin-bottom: 0.2em;
 }
 
-/* Estilos para el título h2 dentro de FYQ */
+/* Estilos para la sección de preguntas frecuentes (FYQ) */
+.FYQ {
+  text-align: left;
+  padding: 0;
+  margin-top: 0%;
+
+}
+
+/* Estilos para el título h3 dentro de FYQ */
 .FYQ h2 {
   color: aliceblue;
   text-decoration: underline;
 }
 
-/* Estilos para las columnas de preguntas frecuentes */
-.columnas {
-  display: flex;
-  justify-content: space-between;
+.FYQ h3 {
+  text-decoration: underline;
 }
 
-/* Estilos para cada columna de preguntas frecuentes */
-.columna1,
-.columna2 {
-  flex: 1;
-  width: 45%;
-  /* Ajusta el ancho según sea necesario */
+/* Estilos para el enlace dentro de la sección FYQ */
+.FYQ h3 a {
+  text-decoration: none;
+  color: inherit;
+  /* Tomar el color del texto del contenedor padre (sin color de enlace) */
+}
+
+
+/* Estilos para las columnas de imágenes */
+.columnas {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Estilos para cada columna de imágenes */
+.columna {
+  width: 100%;
+  /* Ajustar el ancho para que haya espacio para tres columnas */
   box-sizing: border-box;
-  padding: 0.3em;
-  font-size: small;
+  /* Evita que el padding y el borde afecten el ancho total */
+  padding: 10px;
+  /* Agrega un poco de espacio entre las imágenes */
 }
 
 /* Añadir estilos adicionales según sea necesario */
 .columna img {
-  width: 100%;
+  width: 30%;
+  /* Hace que las imágenes ocupen el 100% del ancho de su contenedor */
   height: auto;
+  /* Mantiene la proporción de la imagen */
+}
+
+
+/* estilos para los organizadores */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.cuerpo .profesores {
+  text-align: center;
+  display: flex;
+}
+
+.profesores img {
+  height: 100%;
+  width: 100%;
+}
+
+/* Estilos para la sección de pie (footer) */
+.pie {
+  padding: 0.3em;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.pie img {
+  height: 50px;
+  width: auto;
+  margin-bottom: 10px;
+}
+
+.contacto img {
+  max-height: 100px;
+  width: auto;
+}
+
+
+/* Estilos para el enlace dentro de FYQ */
+.FYQ a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .burbuja {
@@ -227,7 +287,7 @@ footer {
   border-radius: 2em;
 }
 
-pregunta {
+.pregunta {
   /* todo: hablarlo en la reunión */
   font-size: 15px;
   font-weight: bold;
@@ -340,6 +400,7 @@ h1 img {
 
 
 .despl {
+  /*scroll-snap:mandatory*/
   overflow-x: scroll;
   overflow-y: hidden;
 }
@@ -370,10 +431,6 @@ h4 {
   /* Cada imagen ocupa un tercio del contenedor */
   box-sizing: border-box;
 }
-
-/* Estilos de las flechas de navegación */
-.flecha-izquierda,
-.flecha-derecha {}
 
 .flecha-izquierda,
 .flecha-derecha {
@@ -416,4 +473,16 @@ h4 {
   margin: 0 auto;
   /* esto es temporal para poder ver de forma correcta los patros */
   width: 18em;
+}
+
+/*Estilos objetivos*/
+.wrapperObjetivos {
+  background-color: #cdd597;
+  padding: 5em;
+}
+
+/*Estilos objetivos*/
+.wrapperObjetivos {
+  background-color: #cdd597;
+  padding: 5em;
 }
