@@ -31,6 +31,10 @@ body {
 h1 {
     color: white;
     text-align: center;
+    margin: 0 auto;
+    /* Añadimos margin: 0 auto; para centrar horizontalmente */
+    max-width: 80%;
+    /* Opcional: ajusta el ancho máximo según tus preferencias */
 }
 
 .cabecera {
