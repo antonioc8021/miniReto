@@ -155,7 +155,7 @@ footer {
 }
 
 .pie img {
-  height: 4em;
+  height: 10%;
   width: auto;
   margin-bottom: 1em;
 }
@@ -384,7 +384,6 @@ h4 {
 
 /* Estilos del contenedor del carrusel y del día */
 .flex.despl {
-  display: flex;
   justify-content: center;
   align-items: center;
 }
