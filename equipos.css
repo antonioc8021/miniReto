@@ -13,23 +13,29 @@ body {
     min-height: 100vh;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url('./Imagenes/fondocampo2.jpg');
+    background-color: rgb(208, 249, 145);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
  
-.contenedor-centro {
+.contenedor_centro {
+    margin-top: 2em;
+    background-color: black;
+    width: 80%;
+    border-radius: 1em;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center; /* Agregamos text-align: center aquí */
+
 }
  
 h1 {
-    color: white;
+    color:white;
+    background-color: black;
     text-align: center; 
     margin: 0 auto; /* Añadimos margin: 0 auto; para centrar horizontalmente */
-    max-width: 80%; /* Opcional: ajusta el ancho máximo según tus preferencias */
 }
 .cabecera {
     background-color: #333;
@@ -57,23 +63,34 @@ h1 {
   }
  
  
-.cuerpo {
+  .cuerpo {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: flex-start;
-    padding-top: 70px; /* Ajuste para evitar que los jugadores se solapen con el menú */
+    padding-top: 70px;
+    min-height: 100vh;
+    box-sizing: border-box;
 }
  
+.jugadores {
+    margin: 0 6%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Puedes ajustar esto según tus preferencias */
+    align-items: flex-start;
+}
+
 .ficha_jugador {
     width: 200px;
     height: 300px;
     margin: 60px; /* Ajuste del margen para los jugadores */
     position: relative;
     cursor: pointer;
-    background-color: #57d534;
+    background-color: black;
     border-radius: 10px;
     overflow: hidden;
+    color: white;
 }
  
 .imagen_jugador {
