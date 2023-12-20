@@ -75,8 +75,6 @@ main h1 {
   margin-top: 100px;
 }
 
-
-
 a {
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
@@ -151,7 +149,7 @@ footer {
 }
 
 /* Estilos para la sección de pie (footer) */
-/* Estilos para la sección de pie (footer) */
+
 .pie {
   padding: 0.3em;
   text-align: center;
@@ -179,6 +177,11 @@ footer {
   width: auto;
 }
 
+.PreguntasFrec {
+  text-align: center;
+  background-color: #09941b;
+  margin-bottom: 0.2em;
+}
 /* Estilos para la sección de preguntas frecuentes (FYQ) */
 .FYQ {
   text-align: left;
@@ -264,57 +267,11 @@ footer {
   width: auto;
 }
 
-/* Estilos para la sección de preguntas frecuentes (FYQ) */
-.FYQ {
-  text-align: left;
-  padding: 0;
-  margin-top: 0%;
-
-}
-
-.PreguntasFrec {
-  text-align: center;
-  background-color: #09941b;
-  margin-bottom: 0.2em;
-}
-
-/* Estilos para el título h3 dentro de FYQ */
-.FYQ h2 {
-  color: aliceblue;
-  text-decoration: underline;
-}
 
 /* Estilos para el enlace dentro de FYQ */
 .FYQ a {
   text-decoration: none;
   color: inherit;
-}
-
-/* Estilos para las columnas de preguntas frecuentes */
-.columnas {
-  display: flex;
-  justify-content: space-between;
-}
-
-/* Estilos para cada columna de preguntas frecuentes */
-.columna {
-  overflow: auto;
-  flex: 1;
-  width: 40%;
-  /* Ajustar según sea necesario */
-  box-sizing: border-box;
-  /* Evitar que el padding y el borde afecten el ancho total */
-  padding: 10px;
-  /* Agregar un poco de espacio entre las columnas */
-  font-size: small;
-}
-
-/* Añadir estilos adicionales según sea necesario */
-.columna img {
-  width: 80%;
-  /* Hace que las imágenes ocupen el 100% del ancho de su contenedor */
-  height: auto;
-  /* Mantiene la proporción de la imagen */
 }
 
 .burbuja {
@@ -438,6 +395,7 @@ h1 img {
 
 
 .despl {
+  /*scroll-snap:mandatory*/
   overflow-x: scroll;
   overflow-y: hidden;
 }
@@ -468,10 +426,6 @@ h4 {
   /* Cada imagen ocupa un tercio del contenedor */
   box-sizing: border-box;
 }
-
-/* Estilos de las flechas de navegación */
-.flecha-izquierda,
-.flecha-derecha {}
 
 .flecha-izquierda,
 .flecha-derecha {
