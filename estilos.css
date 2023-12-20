@@ -142,12 +142,17 @@ footer {
   text-align: center;
   display: flex;
   flex-direction: row;
+  font-size: small;
+}
+
+.pie .patrocinadores {
+  text-decoration: none;
 }
 
 .pie img {
-  height: 50px;
+  height: 10%;
   width: auto;
-  margin-bottom: 10px;
+  margin-bottom: 1em;
 }
 
 .contacto img {
@@ -217,9 +222,6 @@ footer {
   border-radius: 2em;
 }
 
-
-.burbuja p {}
-
 pregunta {
   /* todo: hablarlo en la reunión */
   font-size: 15px;
@@ -227,13 +229,6 @@ pregunta {
   /* text-decoration: underline; */
 
 }
-
-
-/* .textofyq {
-  color: rgb(252, 255, 252);
-} */
-
-/* comentarios  */
 
 /* estilos torneo*/
 .solidario {
