@@ -75,14 +75,6 @@ input {
     border-radius: 0.5em;
 }
 
-
-.jugador input[type="text"] {
-    /* width: 100%; */
-    /* Hace que el input se ajuste al 100% del ancho del contenedor */
-    /* box-sizing: border-box; */
-    /* Incluye el padding y el borde en el ancho total */
-}
-
 .formulario {
     background-color: #aaa6a6;
     /* border-radius: 1em; */

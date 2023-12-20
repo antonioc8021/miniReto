@@ -14,7 +14,8 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
-.cuerpo{
+
+.cuerpo {
   padding-top: 80px;
 }
 
@@ -47,11 +48,11 @@ body {
   background-color: #555;
 }
 
-/* Añade un espacio al cuerpo para evitar solapamiento con el menú fijo */
+/* Añade un espacio al cuerpo para evitar solapamiento con el menú fijo
 .cuerpo {
   padding-top: 80px;
-  /* Ajusta este valor según sea necesario */
-}
+  Ajusta este valor según sea necesario 
+} */
 
 
 main h1 {
@@ -325,7 +326,7 @@ h1 img {
   display: inline;
 }
 
-.card > div {
+.card>div {
   border: 1px solid black;
   border-radius: 6px;
   padding: 10px;
@@ -334,7 +335,7 @@ h1 img {
   color: white;
 }
 
-.card  .resultado {
+.card .resultado {
   background-color: white;
   padding: 10px;
   color: black;
@@ -367,12 +368,14 @@ h4 {
 }
 
 .carrusel-item_torneo {
-  flex: 0 0 33.33%; /* Cada imagen ocupa un tercio del contenedor */
+  flex: 0 0 33.33%;
+  /* Cada imagen ocupa un tercio del contenedor */
   box-sizing: border-box;
 }
 
 /* Estilos de las flechas de navegación */
-.flecha-izquierda, .flecha-derecha {
+.flecha-izquierda,
+.flecha-derecha {
   cursor: pointer;
   font-size: 24px;
   margin: 0 10px;
@@ -386,3 +389,15 @@ h4 {
 }
 
 /* Patrocinadores */
+.patrocinadores {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
+.patrocinadores img {
+  /* esto es temporal para poder ver de forma correcta los patros */
+  height: 50px;
+  width: 50px;
+}
