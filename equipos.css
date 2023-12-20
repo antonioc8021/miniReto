@@ -1,14 +1,15 @@
-header 
-{
+header {
     padding: 10px;
     margin-bottom: 10px;
     text-align: center;
-    
+
 }
+
 body {
     display: flex;
     flex-direction: column;
     align-items: stretch;
+    text-align: center;
     min-height: 100vh;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -20,6 +21,8 @@ body {
 
 .contenedor-centro {
     display: flex;
+    margin-left: auto;
+    margin-right: auto;
     align-items: center;
     justify-content: center;
     height: 100vh;
@@ -29,6 +32,7 @@ h1 {
     color: white;
     text-align: center; /* Añadido para centrar el texto horizontalmente */
 }
+
 .cabecera {
     background-color: #333;
     padding: 15px;
@@ -36,9 +40,11 @@ h1 {
     width: 100%;
     top: 0;
     z-index: 1000;
-    transition: background-color 0.3s; /* Agregamos transición para el cambio de color */
-  }
-  .cabecera a {
+    transition: background-color 0.3s;
+    /* Agregamos transición para el cambio de color */
+}
+
+.cabecera a {
     color: white;
     font-family: 'Roboto';
     font-weight: bolder;
@@ -48,11 +54,12 @@ h1 {
     margin: 0 10px;
     border-radius: 5px;
     position: relative;
-  }
-  /* Cambiar color del menú al pasar el cursor */
-  .cabecera a:hover {
+}
+
+/* Cambiar color del menú al pasar el cursor */
+.cabecera a:hover {
     background-color: #555;
-  }
+}
 
 
 .cuerpo {
@@ -60,16 +67,18 @@ h1 {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: flex-start;
-    padding-top: 70px; /* Ajuste para evitar que los jugadores se solapen con el menú */
+    padding-top: 70px;
+    /* Ajuste para evitar que los jugadores se solapen con el menú */
 }
 
 .ficha_jugador {
     width: 200px;
     height: 300px;
-    margin: 60px; /* Ajuste del margen para los jugadores */
+    margin: 60px;
+    /* Ajuste del margen para los jugadores */
     position: relative;
     cursor: pointer;
-    background-color: #57d534; 
+    background-color: #57d534;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -111,3 +120,5 @@ h1 {
     color: white;
     text-align: center;
 }
+
+tiene menú contextual

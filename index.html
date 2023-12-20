@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <title>Inicio</title> 
     <link rel="stylesheet" href="estilos.css">
 
 </head>
@@ -20,14 +20,17 @@
                 <a href="inscripciones.html">Inscripciones</a>
                 <a href="organizadores.html">Organizadores</a>
                 <a href="patrocinadores.html">Patrocinadores</a>
+                <a href="objetivos.html">Objetivos</a>
             </nav>
         </header>
     </div>
+    <div class="section">
         <div class="galeria">
             <img src="./Imagenes/imagen_galeria.jpg" alt="Imagen">
         </div>
-
-        <main>
+    </div>  
+      <main>
+        <div class="section">
           <h1>Últimas novedades</h1>
           <section class="carrusel" id="miCarrusel">
             <div class="carrusel-container">
@@ -64,26 +67,27 @@
               <!-- Agrega más imágenes según sea necesario -->
             </div>
           </section>
-        </main>
-        <script src="carrusel.js"></script>
-          
-          <section class="objetivos-patrocinadores">
-            <h2>Objetivo del Torneo</h2>
-            <p>🏟 El Proyecto IES Augusto Cup 2024 usará un torneo de fútbol sala en el que jugarán más de 90 alumnos, como pretexto para generar sinergias entre el IES Augusto González de Linares, el IES Peñacastillo, la ONG Nueva Vida y empresas del sector de la informática.</p>
+        </div>
+      </main>
+<script src="carrusel.js"></script>
+    </div>
+      <div class="section">
+        <section class="objetivos-patrocinadores">
+          <h1>Objetivo del Torneo</h1>
+          <p>🏟 El Proyecto IES Augusto Cup 2024 usará un torneo de fútbol sala en el que jugarán más de 90 alumnos, como pretexto para generar sinergias entre el IES Augusto González de Linares, el IES Peñacastillo, la ONG Nueva Vida y empresas del sector de la informática.</p>
 
-            <p>🧠 Con la neurociencia como base, este proyecto utilizará metodologías activas para generar impacto en su entorno más cercano contribuyendo a los ODS: hambre cero, salud y bienestar y educación de calidad.​ </p>
+          <p>🧠 Con la neurociencia como base, este proyecto utilizará metodologías activas para generar impacto en su entorno más cercano contribuyendo a los ODS: hambre cero, salud y bienestar y educación de calidad.​ </p>
+          
+          <p>🧑‍🎓 Más de 120 alumnos de diversas disciplinas adquirirán y mostrarán las competencias de su perfil profesional siendo capaces de convertirlas en ayuda para colectivos vulnerables de su entorno. ​ </p>
             
-           <p>🧑‍🎓 Más de 120 alumnos de diversas disciplinas adquirirán y mostrarán las competencias de su perfil profesional siendo capaces de convertirlas en ayuda para colectivos vulnerables de su entorno. ​ </p>
-              
-            <p>🚛 La ONG Nueva Vida gestionará tanto los alimentos no perecederos recogidos como los recursos económicos generados, para que lleguen a las realidades sociales que más lo necesitan y trabajarán con el alumnado la concienciación y la sensibilización.​ </p>
-              
-            <p>📈 No han querido faltar a esta cita empresas que habitualmente reciben alumnos durante el periodo de Formación en Centros de Trabajo. Estas actuarán como patrocinadores de los equipos y donarán alimentos además de facilitar otras actuaciones que se llevarán a cabo durante los próximos meses.​ </p>
-              
-            <p>💪 En conclusión, el proyecto IES Augusto Cup 2024 será, en todas sus dimensiones, un ganar, ganar y volver a ganar.</p>
-          </section>
-        </main>
-        <!--en el cuerpo pondremos los videos(noticias), los objetivos que se tienen con el torneo y los patrocinadores-->
-      </div> 
+          <p>🚛 La ONG Nueva Vida gestionará tanto los alimentos no perecederos recogidos como los recursos económicos generados, para que lleguen a las realidades sociales que más lo necesitan y trabajarán con el alumnado la concienciación y la sensibilización.​ </p>
+            
+          <p>📈 No han querido faltar a esta cita empresas que habitualmente reciben alumnos durante el periodo de Formación en Centros de Trabajo. Estas actuarán como patrocinadores de los equipos y donarán alimentos además de facilitar otras actuaciones que se llevarán a cabo durante los próximos meses.​ </p>
+            
+          <p>💪 En conclusión, el proyecto IES Augusto Cup 2024 será, en todas sus dimensiones, un ganar, ganar y volver a ganar.</p>
+        </section>
+      </div>
+    <div class="section">
     <div class="pie">
       <footer>
         <section class="patrocinadores">
@@ -113,9 +117,9 @@
       </div>
       <div class="columna">
           <img src="Imagenes/imagenes_patrocinadores/Gobierno de Cantabria.png" alt="ty">
-
+  
       </div>
-
+  
       <div class="columna">
           <!-- Segunda columna de preguntas -->
           <img src="Imagenes/imagenes_patrocinadores/Ministerio de Educación y Formación Profesional.png"
@@ -128,6 +132,30 @@
         <p>&copy; 2023 Torneo Benéfico de Fútbol IES Augusto Gonzaléz de Linares. Todos los derechos reservados.</p>
       </footer>
     </div>
+  </div>
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    let currentSection = 0;
+
+    window.addEventListener('wheel', function(e) {
+      e.preventDefault();
+
+      const delta = e.deltaY * 0.50;
+      const sections = document.querySelectorAll('.section');
+
+      if (delta > 0 && currentSection < sections.length - 1) {
+        currentSection++;
+      } else if (delta < 0 && currentSection > 0) {
+        currentSection--;
+      }
+
+      const translateY = currentSection * -100;
+      sections.forEach(section => {
+        section.style.transform = `translateY(${translateY}%)`;
+      });
+    });
+  });
+  </script>
 </body>
 
 </html>
