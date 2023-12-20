@@ -16,387 +16,389 @@ body {
 }
 
 .cuerpo {
+  padding-top: 80px;
+}
 
-  .cuerpo {
-    padding-top: 80px;
-  }
+/* Estilos para el menú fijo */
+.cabecera {
+  background-color: #333;
+  padding: 15px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.3s;
+  /* Agregamos transición para el cambio de color */
+}
 
-  /* Estilos para el menú fijo */
-  .cabecera {
-    background-color: #333;
-    padding: 15px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    transition: background-color 0.3s;
-    /* Agregamos transición para el cambio de color */
-  }
+.cabecera a {
+  color: white;
+  font-family: 'Roboto';
+  font-weight: bolder;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 5px;
+  position: relative;
+}
 
-  .cabecera a {
-    color: white;
-    font-family: 'Roboto';
-    font-weight: bolder;
-    font-size: 18px;
-    text-decoration: none;
-    padding: 10px 20px;
-    margin: 0 10px;
-    border-radius: 5px;
-    position: relative;
-  }
+/* Cambiar color del menú al pasar el cursor */
+.cabecera a:hover {
+  background-color: #555;
+}
 
-  /* Cambiar color del menú al pasar el cursor */
-  .cabecera a:hover {
-    background-color: #555;
-  }
-
-  /* Añade un espacio al cuerpo para evitar solapamiento con el menú fijo
+/* Añade un espacio al cuerpo para evitar solapamiento con el menú fijo
 .cuerpo {
   padding-top: 80px;
   Ajusta este valor según sea necesario 
 } */
 
 
-  main h1 {
-    text-decoration: underline;
-    text-align: center;
-  }
+main h1 {
+  text-decoration: underline;
+  text-align: center;
+}
 
 
 
-  a {
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-  }
+a {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-  .equipo img {
-    width: 40%;
-    height: 50%;
-  }
+.equipo img {
+  width: 40%;
+  height: 50%;
+}
 
-  .galeria img {
-    width: 100%;
-    height: 900px;
-    margin-bottom: 50px;
-  }
+.galeria img {
+  width: 100%;
+  height: 900px;
+  margin-bottom: 50px;
+}
 
-  .equipo {
-    border: 1px solid #ddd;
-    padding: 10px;
-    margin-bottom: 20px;
-  }
+.equipo {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 20px;
+}
 
-  footer {
-    display: flex;
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1em;
-  }
-
-
-  /*Estilo carrusel de imagenes*/
-
-  .carrusel {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    margin-bottom: 0px;
-  }
-
-  .carrusel-container {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-  }
-
-  .carrusel-item {
-    min-width: 100%;
-  }
-
-  .carrusel-item img {
-    width: 50%;
-    height: auto;
-    margin-left: 25%;
-  }
-
-  /* Estilos para la sección de pie (footer) */
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .cuerpo .profesores {
-    text-align: center;
-    display: flex;
-  }
-
-  .profesores img {
-    display: flex;
-    height: 35em;
-    width: auto;
-    margin: 1em;
-    text-align: center;
-  }
-
-  /* Estilos para la sección de pie (footer) */
-  .pie {
-    padding: 0.3em;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    font-size: small;
-  }
-
-  .pie .patrocinadores {
-    text-decoration: none;
-  }
-
-  .pie img {
-    height: 10%;
-    width: auto;
-    margin-bottom: 1em;
-  }
-
-  .contacto img {
-    max-height: 100px;
-    width: auto;
-  }
+footer {
+  display: flex;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
 
 
-  /* Estilos para la sección de preguntas frecuentes (FYQ) */
-  .wrapperfyq {
-    display: flex;
-    flex-direction: column;
-    background-color: #cdd597;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100%;
-    width: auto;
-  }
+/*Estilo carrusel de imagenes*/
 
-  .FYQ {
-    text-align: left;
-    padding: 0.2em;
-    /* Ajusta el espacio interno según sea necesario */
-    margin-top: 0.4em;
-    /* Ajusta el margen superior según sea necesario */
-  }
+.carrusel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 0px;
+}
 
-  .PreguntasFrec {
-    text-align: center;
-    margin-bottom: 0.2em;
-  }
+.carrusel-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
 
-  /* Estilos para el título h2 dentro de FYQ */
-  .FYQ h2 {
-    color: aliceblue;
-    text-decoration: underline;
-  }
+.carrusel-item {
+  min-width: 100%;
+}
 
-  /* Estilos para las columnas de preguntas frecuentes */
-  .columnas {
-    display: flex;
-    justify-content: space-between;
-  }
+.carrusel-item img {
+  width: 50%;
+  height: auto;
+  margin-left: 25%;
+}
 
-  /* Estilos para cada columna de preguntas frecuentes */
-  .columna1,
-  .columna2 {
-    flex: 1;
-    width: 45%;
-    /* Ajusta el ancho según sea necesario */
-    box-sizing: border-box;
-    padding: 0.3em;
-    font-size: small;
-  }
+/* Estilos para la sección de pie (footer) */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
 
-  /* Añadir estilos adicionales según sea necesario */
-  .columna img {
-    width: 100%;
-    height: auto;
-  }
+.cuerpo .profesores {
+  text-align: center;
+  display: flex;
+}
 
-  .burbuja {
-    color: white;
-    padding: 1em;
-    margin: 1em;
-    background-color: #2D8E2D;
-    border-radius: 2em;
-  }
+.profesores img {
+  display: flex;
+  height: 35em;
+  width: auto;
+  margin: 1em;
+  text-align: center;
+}
 
-  pregunta {
-    /* todo: hablarlo en la reunión */
-    font-size: 15px;
-    font-weight: bold;
-    /* text-decoration: underline; */
+/* Estilos para la sección de pie (footer) */
+/* Estilos para la sección de pie (footer) */
+.pie {
+  padding: 0.3em;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  font-size: small;
+}
 
-  }
+/* Añade estilos para los enlaces dentro de la sección de pie */
+.pie a {
+  color: inherit;
+  /* hereda el color del texto del elemento padre */
+  text-decoration: none;
+  /* quita la subrayado predeterminado */
+}
 
-  /* estilos torneo*/
-  .solidario {
-    background-color: #DDDDDD;
-    margin-top: 0;
-    padding: 30px;
-    margin-bottom: 30px;
-  }
+.pie img {
+  height: 10%;
+  width: auto;
+  margin-bottom: 1em;
+}
 
-  .solidario img {
-    float: right;
-    clip-path: inset(3% 10% 12% 40%);
-    margin: -20px -100px 0 -370px;
-    height: 670px;
-    width: auto;
-    overflow: hidden;
-  }
-
-  /* estilos torneo*/
-  .solidario {
-    background-color: #DDDDDD;
-    margin-top: 0;
-    padding: 30px;
-    margin-bottom: 30px;
-  }
-
-  .solidario img {
-    float: right;
-    clip-path: inset(3% 10% 12% 40%);
-    margin: -20px -100px 0 -370px;
-    height: 670px;
-    width: auto;
-    overflow: hidden;
-  }
+.contacto img {
+  max-height: 100px;
+  width: auto;
+}
 
 
-  h1 img {
-    max-height: 1em;
-  }
+/* Estilos para la sección de preguntas frecuentes (FYQ) */
+.wrapperfyq {
+  display: flex;
+  flex-direction: column;
+  background-color: #cdd597;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: auto;
+}
 
-  .puntuacion th,
-  .puntuacion td {
-    width: 27vh;
-    text-align: center;
-  }
+.FYQ {
+  text-align: left;
+  padding: 0.2em;
+  /* Ajusta el espacio interno según sea necesario */
+  margin-top: 0.4em;
+  /* Ajusta el margen superior según sea necesario */
+}
 
-  .puntuacion th {
-    background-color: rgb(90, 207, 54);
-  }
+.PreguntasFrec {
+  text-align: center;
+  margin-bottom: 0.2em;
+}
 
-  .puntuacion tr:nth-child(even) {
-    background-color: #f2f2f2;
-  }
+/* Estilos para el título h2 dentro de FYQ */
+.FYQ h2 {
+  color: aliceblue;
+  text-decoration: underline;
+}
 
-  .puntuacion tr:nth-child(odd) {
-    background-color: #ffffff;
-  }
+/* Estilos para las columnas de preguntas frecuentes */
+.columnas {
+  display: flex;
+  justify-content: space-between;
+}
 
-  .deportivo {
-    background-color: #DDDDDD;
-    /*width: 100%;*/
-    padding: 30px;
-    margin-bottom: 30px;
-  }
+/* Estilos para cada columna de preguntas frecuentes */
+.columna1,
+.columna2 {
+  flex: 1;
+  width: 45%;
+  /* Ajusta el ancho según sea necesario */
+  box-sizing: border-box;
+  padding: 0.3em;
+  font-size: small;
+}
 
-  .deportivo img {
-    display: inline;
-    height: 200px;
-    width: auto;
-  }
+/* Añadir estilos adicionales según sea necesario */
+.columna img {
+  width: 100%;
+  height: auto;
+}
 
-  .flex {
-    display: flex;
-  }
+.burbuja {
+  color: white;
+  padding: 1em;
+  margin: 1em;
+  background-color: #2D8E2D;
+  border-radius: 2em;
+}
+
+pregunta {
+  /* todo: hablarlo en la reunión */
+  font-size: 15px;
+  font-weight: bold;
+  /* text-decoration: underline; */
+
+}
+
+/* estilos torneo*/
+.solidario {
+  background-color: #DDDDDD;
+  margin-top: 0;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.solidario img {
+  float: right;
+  clip-path: inset(3% 10% 12% 40%);
+  margin: -20px -100px 0 -370px;
+  height: 670px;
+  width: auto;
+  overflow: hidden;
+}
+
+/* estilos torneo*/
+.solidario {
+  background-color: #DDDDDD;
+  margin-top: 0;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.solidario img {
+  float: right;
+  clip-path: inset(3% 10% 12% 40%);
+  margin: -20px -100px 0 -370px;
+  height: 670px;
+  width: auto;
+  overflow: hidden;
+}
 
 
-  .flex div {
-    flex: 1;
-  }
+h1 img {
+  max-height: 1em;
+}
 
-  .card {
-    flex: 1;
-  }
+.puntuacion th,
+.puntuacion td {
+  width: 27vh;
+  text-align: center;
+}
 
-  .card * {
-    display: inline;
-  }
+.puntuacion th {
+  background-color: rgb(90, 207, 54);
+}
 
-  .card>div {
-    .card>div {
-      border: 1px solid black;
-      border-radius: 6px;
-      padding: 10px;
-      margin-right: 30vh;
-      background-color: black;
-      color: white;
-    }
+.puntuacion tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
 
-    .card .resultado {
-      background-color: white;
-      padding: 10px;
-      color: black;
-      font-weight: bold;
-    }
+.puntuacion tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.deportivo {
+  background-color: #DDDDDD;
+  /*width: 100%;*/
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.deportivo img {
+  display: inline;
+  height: 200px;
+  width: auto;
+}
+
+.flex {
+  display: flex;
+}
 
 
-    .despl {
-      overflow-x: scroll;
-      overflow-y: hidden;
-    }
+.flex div {
+  flex: 1;
+}
 
-    h4 {
-      border-top: 1px solid black;
-      border-bottom: 1px solid black;
-      padding: 5px;
-      background-color: #DDDDDD;
-    }
+.card {
+  flex: 1;
+}
 
-    /*Carrusel de torneo*/
-    .carrusel_torneo {
-      text-align: center;
-    }
+.card * {
+  display: inline;
+}
 
-    .carrusel-container_torneo {
-      display: flex;
-      overflow: hidden;
-      width: 100%;
-      margin-bottom: 20px;
-    }
+.card>div {
+  border: 1px solid black;
+  border-radius: 6px;
+  padding: 10px;
+  margin-right: 30vh;
+  background-color: black;
+  color: white;
+}
 
-    .carrusel-item_torneo {
-      flex: 0 0 33.33%;
-      /* Cada imagen ocupa un tercio del contenedor */
-      flex: 0 0 33.33%;
-      /* Cada imagen ocupa un tercio del contenedor */
-      box-sizing: border-box;
-    }
+.card .resultado {
+  background-color: white;
+  padding: 10px;
+  color: black;
+  font-weight: bold;
+}
 
-    /* Estilos de las flechas de navegación */
-    .flecha-izquierda,
-    .flecha-derecha {
 
-      .flecha-izquierda,
-      .flecha-derecha {
-        cursor: pointer;
-        font-size: 24px;
-        margin: 0 10px;
-      }
+.despl {
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
 
-      /* Estilos del contenedor del carrusel y del día */
-      .flex.despl {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
+h4 {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 5px;
+  background-color: #DDDDDD;
+}
 
-      /* Patrocinadores */
-      .patrocinadores {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+/*Carrusel de torneo*/
+.carrusel_torneo {
+  text-align: center;
+}
 
-      }
+.carrusel-container_torneo {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 20px;
+}
 
-      .patrocinadores img {
-        /* esto es temporal para poder ver de forma correcta los patros */
-        height: 50px;
-        width: 50px;
-      }
+.carrusel-item_torneo {
+  flex: 0 0 33.33%;
+  /* Cada imagen ocupa un tercio del contenedor */
+  flex: 0 0 33.33%;
+  /* Cada imagen ocupa un tercio del contenedor */
+  box-sizing: border-box;
+}
+
+/* Estilos de las flechas de navegación */
+.flecha-izquierda,
+.flecha-derecha {}
+
+.flecha-izquierda,
+.flecha-derecha {
+  cursor: pointer;
+  font-size: 24px;
+  margin: 0 10px;
+}
+
+/* Estilos del contenedor del carrusel y del día */
+.flex.despl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Patrocinadores */
+.patrocinadores {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
+.patrocinadores img {
+  /* esto es temporal para poder ver de forma correcta los patros */
+  height: 50px;
+  width: 50px;
+}
