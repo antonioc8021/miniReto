@@ -405,3 +405,9 @@ h4 {
   height: 6em;
   width: auto;
 }
+
+/*Estilos objetivos*/
+.wrapperObjetivos {
+  background-color: #cdd597;
+  padding: 5em;
+}
