@@ -11,15 +11,20 @@ Luchamos por erradicar el hambre y garantizar el acceso universal a alimentos nu
 b. ODS 3: Salud y Bienestar
 Promovemos un estilo de vida activo y saludable a través del deporte, fomentando el bienestar físico y mental.
 
+todo: educacion de calidad, darle un vistazo.
 c. ODS 17: Alianzas para Lograr Objetivos
 Buscamos establecer colaboraciones sólidas con organizaciones, empresas y la comunidad en general para maximizar el impacto positivo de nuestro torneo.
 
+todo: poner que se quieren visibilizar las ODS
 3. Misión del Torneo
-Nuestra misión es utilizar la pasión por el fútbol como un vehículo para generar un cambio positivo en la sociedad. Queremos inspirar a la comunidad a unirse en la lucha contra el hambre y promover valores fundamentales como la solidaridad, la inclusión y la responsabilidad social.
+Nuestra misión es utilizar la pasión por el fútbol como un vehículo para generar un cambio positivo en la sociedad. 
+Queremos inspirar a la comunidad a unirse en la lucha contra el hambre y promover valores fundamentales como la solidaridad, la inclusión y la responsabilidad social.
 
+todo: visión del torneo a largo plazo, 
 4. Evolución del Torneo
 Visualizamos que nuestro torneo evolucione a lo largo del tiempo, expandiendo su alcance y aumentando su impacto.
 
+todo: relacionar los valores con los ods que se trabajan, sin decirlo directamente pero si que el usuario se de cuenta
 5. Valores del Proyecto
 En el centro de nuestro proyecto se encuentran los siguientes valores:
 
@@ -36,3 +41,5 @@ Nos comprometemos a ser agentes de cambio positivo, tomando medidas responsables
 
 
 ///////////////PREGUNTAR SI LA PSICOLOGIA DE LOS COLORES LO METEMOS EN TEXTO O VALE CON NOMBRARLO EN LA EXPOSICION///////////////////
+
+Antonio: 8/10 aprobado alto
