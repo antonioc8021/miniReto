@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Torneos</title>
     <link rel="stylesheet" href="estilos.css">
+    <script src="carrusel_torneo.js"></script>
 
 </head>
 
@@ -71,14 +72,14 @@
             <h1>Torneo Deportivo</h1>
             <div class="flex">
                 <div>
-                    <h3>Sistema de competición <a
-                            href="./archivos/Sistemas de competición (Reglamento).docx">(Reglamento)</a>
+                    <h3>Sistema de competición <a href="./Sistemas de competición (Reglamento).docx">(Reglamento)</a>
                     </h3>
                     <p><strong>Duración:</strong> 10 minutos (20 en finales).</p>
                     <p><strong>Jugadores:</strong> 5 titulares obligatorios y 10 supletentes opcionales.</p>
                     <p><strong>Cambios:</strong> ilimitados.</p>
                 </div>
-                <div>
+                <div class="deportivo-img">
+                    <img src="./Imagenes/N1-1.jpg">
                     <img src="./Imagenes/torneo1.jpg">
                 </div>
             </div>
@@ -187,56 +188,36 @@
                     </tr>
                 </table>
             </div>
-            <div>
+            <div class="resultados">
                 <br>
                 <h3>Resultados del Dia</h3>
                 <div class="flex">
                     <div class="card">
-                        <div>
-                            <p>Equipo 1</p>
-                            <p class="resultado">0-0</p>
-                            <p>Equipo 2</p>
-                        </div>
+                        <p>Equipo 1</p>
+                        <p class="resultado">0-0</p>
+                        <p>Equipo 2</p>
                     </div>
                     <div class="card">
-                        <div>
-                            <p>Equipo 1</p>
-                            <p class="resultado">0-0</p>
-                            <p>Equipo 2</p>
-                        </div>
+                        <p>Equipo 1</p>
+                        <p class="resultado">0-0</p>
+                        <p>Equipo 2</p>
                     </div>
                     <div class="card">
-                        <div>
-                            <p>Equipo 1</p>
-                            <p class="resultado">0-0</p>
-                            <p>Equipo 2</p>
-                        </div>
+                        <p>Equipo 1</p>
+                        <p class="resultado">0-0</p>
+                        <p>Equipo 2</p>
                     </div>
                 </div>
                 <br>
             </div>
-            <div class="carrusel_torneo">
-                <div class="carrusel-container_torneo">
-                    <div class="carrusel-item_torneo"><img src="./Imagenes/torneo1.jpg" alt="Imagen 1"></div>
-                    <div class="carrusel-item_torneo"><img src="./Imagenes/torneo2.jpg" alt="Imagen 2"></div>
-                    <div class="carrusel-item_torneo"><img src="./Imagenes/torneo3.jpg" alt="Imagen 3"></div>
-                    <!-- Agrega más imágenes según sea necesario -->
-                    <div class="carrusel-item_torneo"><img src="./Imagenes/torneo4.jpg" alt="Imagen 4"></div>
-                    <div class="carrusel-item_torneo"><img src="./Imagenes/torneo5.jpg" alt="Imagen 5"></div>
-                    <div class="carrusel-item_torneo"><img src="./Imagenes/torneo6.jpg" alt="Imagen 6"></div>
-                    <!-- ... -->
-                </div>
-                <div class="flex despl">
-                    <!-- Flechas para navegar en el carrusel -->
-                    <div class="flecha-izquierda">&#9665;</div>
-                    <div class="flecha-derecha">&#9655;</div>
-                </div>
-                <h4>Dia 1</h4>
-                <div class="flex despl">
-                    <!-- Agrega más imágenes según sea necesario -->
-                </div>
+            <div class="">
+                <br>
+                <h3>Galeria</h3>
+                <h4 class="h4-gal">Equipo 1 VS Equipo 2</h4>
+                <div class="galeria-torneo" id="gallery-container1"></div>
+                <h4 class="h4-gal">Dia 1</h4>
+                <div class="galeria-torneo" id="gallery-container2"></div>
             </div>
-            <script src="carrusel_equipo.js"></script>
         </div>
     </div>
 
