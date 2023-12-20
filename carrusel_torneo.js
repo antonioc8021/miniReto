@@ -1,41 +1,23 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const carruselContainer = document.querySelector('.carrusel-container_torneo');
-  const carruselItems = document.querySelectorAll('.carrusel-item_torneo');
-  const flechaIzquierda = document.querySelector('.flecha-izquierda');
-  const flechaDerecha = document.querySelector('.flecha-derecha');
+document.addEventListener('DOMContentLoaded', function () {
+    const galleryContainer1 = document.getElementById('gallery-container1');
+    const galleryContainer2 = document.getElementById('gallery-container2');
 
-  let currentIndex = 0;
+    const imagesFolder = './Imagenes/';
 
-  // Función para cambiar la posición del carrusel
-  function cambiarCarrusel() {
-      const nuevaPosicion = -currentIndex * 100 + '%';
-      carruselContainer.style.transform = 'translateX(' + nuevaPosicion + ')';
-  }
+    imgs(galleryContainer1, 6, "torneo");
+    imgs(galleryContainer2, 4, "torneo1dia");
 
-  // Función para avanzar en el carrusel
-  function avanzarCarrusel() {
-      if (currentIndex < carruselItems.length - 3) {
-          currentIndex++;
-      } else {
-          currentIndex = 0;
-      }
-      cambiarCarrusel();
-  }
+    function imgs(container, numImgs, nombreImg) {
+        for (let i = 1; i <= numImgs; i++) {
+            const imgElement = document.createElement('img');
+            imgElement.src = `${imagesFolder}${nombreImg}${i}.jpg`;
+            imgElement.alt = `${nombreImg} ${i}`;
 
-  // Función para retroceder en el carrusel
-  function retrocederCarrusel() {
-      if (currentIndex > 0) {
-          currentIndex--;
-      } else {
-          currentIndex = carruselItems.length - 3;
-      }
-      cambiarCarrusel();
-  }
+            const galleryItem = document.createElement('div');
+            galleryItem.classList.add('gallery-item');
+            galleryItem.appendChild(imgElement);
 
-  // Eventos para las flechas de navegación
-  flechaDerecha.addEventListener('click', avanzarCarrusel);
-  flechaIzquierda.addEventListener('click', retrocederCarrusel);
-
-  // Configurar intervalo para cambiar automáticamente cada 5 segundos (ajustar según sea necesario)
-  setInterval(avanzarCarrusel, 5000);
+            container.appendChild(galleryItem);
+        }
+    }
 });
