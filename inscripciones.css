@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+header {
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+body {
+    font-family: 'Montserrat';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+nav a {
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.contenido {
+    text-align: center;
+}
+
+.equipo {
+    background-color: #aaa6a6;
+    border-radius: 1em;
+    margin: 0 4em;
+    padding: 1em;
+}
+
+.jugadores {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    /* padding: 0 3em; */
+}
+
+.jugador {
+    background-color: #aaa6a6;
+    display: flex;
+    flex-direction: column;
+    width: 13%;
+    border-radius: 1em;
+    flex: 1;
+    margin: 1em 4em;
+    padding: 1em;
+}
+
+input {
+    border-radius: 0.5em;
+}
+
+
+.jugador input[type="text"] {
+    /* width: 100%; */
+    /* Hace que el input se ajuste al 100% del ancho del contenedor */
+    /* box-sizing: border-box; */
+    /* Incluye el padding y el borde en el ancho total */
+}
+
+.formulario {
+    background-color: #aaa6a6;
+    /* border-radius: 1em; */
+    /* margin: 0 4em; */
+    padding: 1em;
+    margin-top: 2em;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
