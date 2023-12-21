@@ -119,13 +119,11 @@ a {
   text-align: center;
   font-weight: bolder;
 }
-
 #section3 .colaboradores p {
   margin: 0;
   text-align: center;
   font-weight: bolder;
 }
-
 #section4 .pie_pagina {
   font-family: 'Roboto';
   background-color: black;
@@ -138,22 +136,18 @@ a {
   display: flex;
   justify-content: space-between;
 }
-
 .patrocinadores {
   text-align: center;
 }
-
 .fila-patrocinadores {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .columna-patrocinadores {
   margin: 50px;
   /* Espacio entre las imágenes */
 }
-
 /* Estilo opcional para cambiar el tamaño de las imágenes */
 .columna-patrocinadores img {
   width: 200px;
@@ -161,13 +155,12 @@ a {
   height: auto;
   color: transparent;
 }
-
 .objetivos-patrocinadores h1 {
   text-decoration: underline;
   text-align: center;
+  font-weight: bolder;
   margin-top: 100px;
 }
-
 /* Estilo carrusel horizontal */
 .carrusel {
   position: relative;
@@ -176,7 +169,6 @@ a {
   margin-bottom: 20px;
   /* Agregamos un margen inferior para separar del siguiente contenido */
 }
-
 .carrusel-container {
   display: flex;
   transition: transform 0.5s ease-in-out;
@@ -226,26 +218,65 @@ a {
 /*↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ PIE ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
 /* Estilos para la sección de información de contacto */
 
+.pie_pagina {
+  font-family: 'Roboto';
+  background-color: black;
+  color: white;
+  font-size: medium;
+  margin-top: 50px;
+  padding-top: 110px;
+  height: fit-content;
+  flex-direction: column; /* Cambiado de row a column para apilar los elementos verticalmente */
+  display: flex;
+  justify-content: space-between;
+}
+.pie_pagina #map {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 1%;
+}
+.pie_pagina #map .contacto_pie {
+  text-align: center;
+}
+.pie_pagina .redes {
+  text-align: center;
+}
+.foto_pie_pagina #imagen_pie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pie_pagina p {
+  margin: 5px 0;
+  padding: 5px;
+}
+.pie_pagina a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: underline;
+}
+.foto_pie_pagina #imagen_pie img {
+  width: 100%; /* Asegura que la imagen no se extienda más allá de su tamaño original */
+  height: 610px; /* Asegura que la imagen no se extienda más allá de su tamaño original */
+  padding-bottom: 60px;
+}
 #section4 .pie_pagina #map {
   display: flex;
   justify-content: space-between;
   text-align: center;
   margin-bottom: 1%;
 }
-
 #section4 .pie_pagina #map .contacto_pie {
   text-align: center;
 }
-
 #section4 .pie_pagina .redes {
   text-align: center;
 }
-
 #section4 p {
   margin: 5px 0;
   padding: 5px;
 }
-
 #section4 a {
   margin: 0 10px;
   color: white;
@@ -262,8 +293,9 @@ a {
   padding-bottom: 60px;
 }
 #map iframe {
-  width: 300px;
-  height: 150px;
+  width: 400px;
+  height: 200px;
+  padding-left: 2%;
 }
 .redes p {
   text-align: center;
@@ -352,98 +384,6 @@ h1 img {
   display: inline;
   margin: 10px;
   white-space: nowrap;
-}
-@media (max-width: 1000px) {
-  cabecera {
-    padding: 10px;
-}
-
-.cabecera a {
-    padding: 8px 15px;
-}
-
-.galeria img {
-    height: auto;
-    margin-bottom: 10px;
-}
-
-#section1 h1,
-#section2 h1 {
-    margin-top: 50px;
-}
-
-#section4 .pie_pagina {
-    padding-top: 60px;
-    padding-bottom: 20px;
-}
-
-#section4 .foto_pie_pagina #imagen_pie img {
-    height: auto;
-    max-height: 300px;
-    padding-bottom: 30px;
-}
-
-.cuerpo {
-    padding-top: 50px;
-}
-
-.equipo img {
-    width: 100%;
-}
-
-.jugador {
-    width: 100%;
-    margin: 10px 0;
-}
-
-.formulario {
-    margin: 0;
-}
-
-.deportivo img {
-    float: none;
-    margin-left: 0;
-}
-
-.solidario img {
-    display: none;
-}
-
-.puntuacion th,
-.puntuacion td {
-    width: 100%;
-}
-
-.carrusel-item img {
-    width: 100%;
-}
-
-.cuerpoPatrocinadores {
-    padding: 1em;
-}
-
-.patrocinadores .titulo {
-    font-size: 2em;
-}
-
-.patrocinadorVerde img,
-.patrocinadorBlanco img {
-    width: 100%;
-}
-  .flex {
-    flex-direction: column;
-    align-items: stretch;
-  }
-  .card {
-    margin: 0;
-    margin-bottom: 1em;
-  }
-  .solidario img {
-    display: none;
-  }
-  .puntuacion tr {
-    font-size: 0.9em;
-  }
 }
 .card .resultado {
   background-color: white;
@@ -597,4 +537,96 @@ footer {
   color: white;
   text-align: center;
   padding: 1em;
+}
+/*↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ RESPONSIVE ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
+@media (max-width: 1000px) {
+  cabecera {
+    padding: 10px;
+}
+
+.cabecera a {
+    padding: 8px 15px;
+}
+
+.galeria img {
+    height: auto;
+    margin-bottom: 10px;
+}
+
+#section1 h1,
+#section2 h1 {
+    margin-top: 50px;
+}
+
+#section4 .pie_pagina {
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+#section4 .foto_pie_pagina #imagen_pie img {
+    height: auto;
+    max-height: 300px;
+    padding-bottom: 30px;
+}
+.cuerpo {
+    padding-top: 50px;
+}
+
+.equipo img {
+    width: 100%;
+}
+
+.jugador {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.formulario {
+    margin: 0;
+}
+
+.deportivo img {
+    float: none;
+    margin-left: 0;
+}
+
+.solidario img {
+    display: none;
+}
+
+.puntuacion th,
+.puntuacion td {
+    width: 100%;
+}
+
+.carrusel-item img {
+    width: 100%;
+}
+
+.cuerpoPatrocinadores {
+    padding: 1em;
+}
+
+.patrocinadores .titulo {
+    font-size: 2em;
+}
+
+.patrocinadorVerde img,
+.patrocinadorBlanco img {
+    width: 100%;
+}
+  .flex {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .card {
+    margin: 0;
+    margin-bottom: 1em;
+  }
+  .solidario img {
+    display: none;
+  }
+  .puntuacion tr {
+    font-size: 0.9em;
+  }
 }
