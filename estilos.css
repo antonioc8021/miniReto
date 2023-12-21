@@ -291,7 +291,7 @@ a {
 .solidario {
   background-color: 0;
   margin-top: 0;
-  padding: 30px 30px 0 30px;
+  padding: 0 30px 0 30px;
   overflow: hidden;
 }
 
@@ -313,6 +313,7 @@ h1 img {
 .puntuacion td {
   width: 27vh;
   text-align: center;
+  border-radius: 5px;
 }
 
 .puntuacion th {
