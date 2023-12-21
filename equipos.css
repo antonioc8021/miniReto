@@ -73,6 +73,36 @@ h1 {
     box-sizing: border-box;
 }
  
+.entrenador {
+    margin: 0 6%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Puedes ajustar esto según tus preferencias */
+    align-items: flex-start;
+}
+
+.ficha_entrenador{
+    width: 200px;
+    height: 300px;
+    margin: 60px; /* Ajuste del margen para los jugadores */
+    position: relative;
+    cursor: pointer;
+    background-color: black;
+    border-radius: 10px;
+    overflow: hidden;
+    color: white;
+}
+.imagen_entrenador{
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+.ficha_entrenador h2,
+.ficha_entrenador p {
+    margin: 0;
+    text-align: center;
+}
+
 .jugadores {
     margin: 0 6%;
     display: flex;
