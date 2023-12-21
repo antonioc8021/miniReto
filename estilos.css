@@ -7,6 +7,7 @@ header {
   margin-bottom: 10px;
   text-align: center;
 }
+
 /* Estilos para el menú fijo */
 .cabecera {
   background-color: #333;
@@ -18,6 +19,7 @@ header {
   transition: background-color 0.3s;
   /* Agregamos transición para el cambio de color */
 }
+
 .cabecera a {
   color: white;
   font-family: 'Roboto';
@@ -29,6 +31,7 @@ header {
   border-radius: 5px;
   position: relative;
 }
+
 /* Cambiar color del menú al pasar el cursor */
 .cabecera a:hover {
   background-color: #555;
@@ -40,12 +43,14 @@ header {
   padding-top: 80px;
   /*Ajusta este valor según sea necesario*/
 }
+
 body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
   max-height: 100vh;
 }
+
 .objetivos-patrocinadores h1 {
   text-decoration: underline;
   text-align: center;
@@ -56,23 +61,28 @@ a {
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .equipo img {
   width: 40%;
   height: 50%;
 }
+
 .galeria img {
   width: 100%;
   height: 952.5px;
   margin-bottom: 20px;
 }
+
 .equipo {
   border: 1px solid #ddd;
   padding: 10px;
   margin-bottom: 20px;
 }
+
 #container-wrapper {
   overflow: hidden;
 }
+
 .section {
   flex: 1;
   width: 100%;
@@ -83,33 +93,39 @@ a {
   margin: 0;
   box-sizing: border-box;
 }
+
 #section1 h1 {
   text-decoration: underline;
   text-align: center;
   margin-top: 200px;
 }
+
 #section2 p {
   margin: 0 50px;
   font-family: 'Montserrat';
   text-align: justify;
   padding-bottom: 20px;
 }
+
 #section2 h1 {
   text-decoration: underline;
   text-align: center;
   margin-top: 100px;
 }
+
 #section3 .patrocinadores p {
   margin-top: 70px;
   margin-bottom: 10px;
   text-align: center;
   font-weight: bolder;
 }
+
 #section3 .colaboradores p {
   margin: 0;
   text-align: center;
   font-weight: bolder;
 }
+
 #section4 .pie_pagina {
   font-family: 'Roboto';
   background-color: black;
@@ -117,37 +133,48 @@ a {
   font-size: medium;
   padding: 2%;
   margin-top: 150px;
-  flex-direction: column; /* Cambiado de row a column para apilar los elementos verticalmente */
-  height: 100%; /* Cambiado de 100% a auto para permitir que la altura se ajuste según el contenido */
+  flex-direction: column;
+  /* Cambiado de row a column para apilar los elementos verticalmente */
+  height: 100%;
+  /* Cambiado de 100% a auto para permitir que la altura se ajuste según el contenido */
   display: flex;
   justify-content: space-between;
 }
+
 .patrocinadores {
   text-align: center;
 }
+
 .fila-patrocinadores {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .columna-patrocinadores {
-  margin: 50px; /* Espacio entre las imágenes */
+  margin: 50px;
+  /* Espacio entre las imágenes */
 }
+
 /* Estilo opcional para cambiar el tamaño de las imágenes */
 .columna-patrocinadores img {
-  width: 200px; /* Ajusta el tamaño según sea necesario */
+  width: 200px;
+  /* Ajusta el tamaño según sea necesario */
   height: auto;
   color: transparent;
 }
+
 .objetivos-patrocinadores h1 {
   text-decoration: underline;
   text-align: center;
   margin-top: 100px;
 }
+
 a {
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 /* Estilo carrusel horizontal */
 .carrusel {
   position: relative;
@@ -156,28 +183,34 @@ a {
   margin-bottom: 20px;
   /* Agregamos un margen inferior para separar del siguiente contenido */
 }
+
 .carrusel-container {
   display: flex;
   transition: transform 0.5s ease-in-out;
 }
+
 .carrusel-item {
   min-width: 100%;
 }
+
 .carrusel-item img {
   width: 50%;
   /* Ajustamos el ancho de la imagen al 100% */
   height: auto;
   margin-left: 25%;
 }
+
 /* Estilos para la sección de pie (footer) */
 .wrapper {
   display: flex;
   flex-direction: column;
 }
+
 .cuerpo .profesores {
   text-align: center;
   display: flex;
 }
+
 .profesores img {
   display: flex;
   height: 35em;
@@ -185,53 +218,67 @@ a {
   margin: 1em;
   text-align: center;
 }
+
 .contacto img {
   max-height: 100px;
   width: auto;
 }
+
 .PreguntasFrec {
   text-align: center;
   background-color: #09941b;
   margin-bottom: 0.2em;
 }
+
 /*↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ PIE ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
 /* Estilos para la sección de información de contacto */
 
-#section4  .pie_pagina #map {
+#section4 .pie_pagina #map {
   display: flex;
   justify-content: space-between;
   text-align: center;
   margin-bottom: 0;
 }
-#section4  .pie_pagina #map .contacto_pie {
+
+#section4 .pie_pagina #map .contacto_pie {
   text-align: center;
 }
+
 #section4 .pie_pagina .redes {
   text-align: center;
 }
+
 #section4 p {
   margin: 5px 0;
   padding: 5px;
 }
+
 #section4 a {
   margin: 0 10px;
 }
+
 #section4 .foto_pie_pagina #imagen_pie img {
-  width: 1800px; /* Ajusta el ancho máximo según sea necesario */
+  width: 1800px;
+  /* Ajusta el ancho máximo según sea necesario */
   height: 700px;
 }
+
 #map iframe {
   width: 300px;
   height: 150px;
-  margin-bottom: 20px; /* Agregamos un margen inferior para separar del siguiente contenido */
+  margin-bottom: 20px;
+  /* Agregamos un margen inferior para separar del siguiente contenido */
 }
+
 .redes p {
   text-align: center;
 }
+
 .redes a {
   display: block;
   margin-top: 10px;
 }
+
 .burbuja {
   color: white;
   padding: 1em;
@@ -239,10 +286,12 @@ a {
   background-color: #2D8E2D;
   border-radius: 2em;
 }
+
 .pregunta {
   font-size: 15px;
   font-weight: bold;
 }
+
 /* estilos torneo*/
 .solidario {
   background-color: 0;
@@ -250,6 +299,7 @@ a {
   padding: 30px 30px 0 30px;
   overflow: hidden;
 }
+
 .solidario img {
   float: right;
   clip-path: inset(3% 10% 12% 40%);
@@ -263,20 +313,25 @@ a {
 h1 img {
   max-height: 1em;
 }
+
 .puntuacion th,
 .puntuacion td {
   width: 27vh;
   text-align: center;
 }
+
 .puntuacion th {
   background-color: rgb(90, 207, 54);
 }
+
 .puntuacion tr:nth-child(even) {
   background-color: #f2f2f2;
 }
+
 .puntuacion tr:nth-child(odd) {
   background-color: #ffffff;
 }
+
 .deportivo {
   padding: 30px;
   margin-bottom: 30px;
@@ -294,12 +349,15 @@ h1 img {
   border: 2px solid #fff;
   border-radius: 4px;
 }
+
 .flex {
   display: flex;
 }
+
 .flex div {
   flex: 1;
 }
+
 .card {
   text-align: center;
   flex: 1;
@@ -310,6 +368,7 @@ h1 img {
   background-color: rgb(90, 207, 54);
   color: white;
 }
+
 .card * {
   display: inline;
   margin: 10px;
@@ -335,6 +394,7 @@ h1 img {
     font-size: 0.9em;
   }
 }
+
 .card .resultado {
   background-color: white;
   color: black;
@@ -432,8 +492,12 @@ h1 img {
   background-color: #cdd597;
   padding: 5em;
 }
+
 /*Estilos objetivos*/
 .wrapperObjetivos {
   background-color: #cdd597;
   padding: 5em;
 }
+
+
+/* Estilos para las inscripciones */
