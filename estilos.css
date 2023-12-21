@@ -345,7 +345,7 @@ h1 img {
   margin-left: 0%;
 }
 
-.deportivo-img img {
+.deportivo img {
   display: inline;
   height: 200px;
   width: auto;
@@ -392,6 +392,10 @@ h1 img {
 
   .solidario img {
     display: none;
+  }
+
+  .puntuacion tr {
+    font-size: 0.9em;
   }
 }
 
