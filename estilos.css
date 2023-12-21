@@ -46,7 +46,7 @@ header {
 }
 
 .wrapper {
-  padding-top: 80px;
+  padding-top: 50px;
   /*Ajusta este valor según sea necesario*/
 }
 
@@ -642,27 +642,54 @@ footer {
   text-align: center;
   padding: 1em;
 }
+/* Contenedor principal */
 .objetivos_torneo {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Dos columnas en la cuadrícula */
-  gap: 100px; /* Espacio entre las columnas */
+  grid-template-columns: 2fr 1fr;
+  gap: 100px;
 }
+
+/* Estilo para el título */
 .objetivos_torneo h1 {
-  background-color: #fff; /* Color de fondo de la caja */
-  border-radius: 10px; /* Bordes redondeados */
-  box-shadow: 0 -6px 8px rgba(0, 0, 0, 1);
-  padding: 10px 20px; /* Espaciado interno */
-  margin-left: 20px;
-  display: inline-block; /* Hace que el contenedor se ajuste al ancho del contenido */
-  text-transform: uppercase; /* Convierte el texto a mayúsculas */
-  font-weight: bold; /* Hace que el texto sea negrita */
-  flex: 1; /* El elemento ocupa el espacio restante */
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 8px -6px 10px rgba(0, 0, 0, 1);
+  padding: 10px 20px;
+  margin: 60px 50px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: bold;
+  flex: 1;
 }
+
+/* Contenedor de objetivos */
 .objetivos_torneo .main-container {
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: -10px 4px 8px rgba(0, 0, 0, 1);
-  padding: 10px;
+  box-shadow: -8px 4px 10px rgba(0, 0, 0, 1);
+  padding-left: 50px;
+  padding-top: 10px;
+}
+
+/* Estilos generales para los contenedores de objetivos */
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Estilos para cada objetivo */
+.objetivo {
+  flex: 0 0 30%;
+  margin: 5px;
+  box-sizing: border-box;
+}
+
+/* Estilos para las imágenes dentro de los objetivos */
+.objetivo img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  max-height: 100px;
 }
 /*↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ RESPONSIVE ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
 @media (max-width: 1000px) {
