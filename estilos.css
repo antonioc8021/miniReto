@@ -256,27 +256,22 @@ a {
   justify-content: center;
   align-items: center;
 }
-
 #section4 .foto_pie_pagina #imagen_pie img {
   width: 100%; /* Asegura que la imagen no se extienda más allá de su tamaño original */
   height: 610px; /* Asegura que la imagen no se extienda más allá de su tamaño original */
   padding-bottom: 60px;
 }
-
 #map iframe {
   width: 300px;
   height: 150px;
 }
-
 .redes p {
   text-align: center;
 }
-
 .redes a {
   display: block;
   margin-top: 10px;
 }
-
 .burbuja {
   color: white;
   padding: 1em;
@@ -284,12 +279,10 @@ a {
   background-color: #2D8E2D;
   border-radius: 2em;
 }
-
 .pregunta {
   font-size: 15px;
   font-weight: bold;
 }
-
 /* estilos torneo*/
 .solidario {
   background-color: 0;
@@ -297,7 +290,6 @@ a {
   padding: 0 30px 0 30px;
   overflow: hidden;
 }
-
 .solidario img {
   float: right;
   clip-path: inset(3% 10% 12% 40%);
@@ -307,40 +299,32 @@ a {
   width: auto;
   overflow: hidden;
 }
-
 h1 img {
   max-height: 1em;
 }
-
 .puntuacion th,
 .puntuacion td {
   width: 27vh;
   text-align: center;
   border-radius: 5px;
 }
-
 .puntuacion th {
   background-color: rgb(90, 207, 54);
 }
-
 .puntuacion tr:nth-child(even) {
   background-color: #f2f2f2;
 }
-
 .puntuacion tr:nth-child(odd) {
   background-color: #ffffff;
 }
-
 .deportivo {
   padding: 30px;
   margin-bottom: 30px;
   overflow: hidden;
 }
-
 .deportivo-img {
   margin-left: 0%;
 }
-
 .deportivo img {
   display: inline;
   height: 200px;
@@ -348,15 +332,12 @@ h1 img {
   border: 2px solid #fff;
   border-radius: 4px;
 }
-
 .flex {
   display: flex;
 }
-
 .flex div {
   flex: 1;
 }
-
 .card {
   text-align: center;
   flex: 1;
@@ -367,33 +348,103 @@ h1 img {
   background-color: rgb(90, 207, 54);
   color: white;
 }
-
 .card * {
   display: inline;
   margin: 10px;
   white-space: nowrap;
 }
-
 @media (max-width: 1000px) {
+  cabecera {
+    padding: 10px;
+}
+
+.cabecera a {
+    padding: 8px 15px;
+}
+
+.galeria img {
+    height: auto;
+    margin-bottom: 10px;
+}
+
+#section1 h1,
+#section2 h1 {
+    margin-top: 50px;
+}
+
+#section4 .pie_pagina {
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+#section4 .foto_pie_pagina #imagen_pie img {
+    height: auto;
+    max-height: 300px;
+    padding-bottom: 30px;
+}
+
+.cuerpo {
+    padding-top: 50px;
+}
+
+.equipo img {
+    width: 100%;
+}
+
+.jugador {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.formulario {
+    margin: 0;
+}
+
+.deportivo img {
+    float: none;
+    margin-left: 0;
+}
+
+.solidario img {
+    display: none;
+}
+
+.puntuacion th,
+.puntuacion td {
+    width: 100%;
+}
+
+.carrusel-item img {
+    width: 100%;
+}
+
+.cuerpoPatrocinadores {
+    padding: 1em;
+}
+
+.patrocinadores .titulo {
+    font-size: 2em;
+}
+
+.patrocinadorVerde img,
+.patrocinadorBlanco img {
+    width: 100%;
+}
   .flex {
     flex-direction: column;
     align-items: stretch;
   }
-
   .card {
     margin: 0;
     margin-bottom: 1em;
   }
-
   .solidario img {
     display: none;
   }
-
   .puntuacion tr {
     font-size: 0.9em;
   }
 }
-
 .card .resultado {
   background-color: white;
   color: black;
@@ -401,17 +452,14 @@ h1 img {
   white-space: nowrap;
   font-weight: bold;
 }
-
 .resultados h3 {
   text-align: center;
 }
-
 .despl {
   /*scroll-snap:mandatory*/
   overflow-x: scroll;
   overflow-y: hidden;
 }
-
 .h4-gal {
   border-top: 1px solid black;
   border-bottom: 1px solid black;
@@ -419,37 +467,31 @@ h1 img {
   background-color: #DDDDDD;
   text-align: center;
 }
-
 .galeria-torneo {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-
 .galeria-torneo img {
   flex: 1;
   width: auto;
   border: 2px solid #fff;
   border-radius: 4px;
 }
-
 /* Patrocinadores */
 .cuerpoPatrocinadores {
   background-color: white;
 }
-
 .patrocinadores {
   padding: 1em 4em;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
-
 .patrocinadores .titulo {
   text-align: center;
   font-size: 2.5em;
 }
-
 .patrocinadorVerde {
   color: white;
   text-align: center;
@@ -461,7 +503,6 @@ h1 img {
   border-radius: 1em;
   margin-bottom: 2em;
 }
-
 .patrocinadorBlanco {
 
   text-align: center;
@@ -473,34 +514,27 @@ h1 img {
   border-radius: 1em;
   margin-bottom: 2em;
 }
-
 .patrocinadorVerde img {
   margin: 0 auto;
   /* esto es temporal para poder ver de forma correcta los patros */
   width: 18em;
 }
-
 .patrocinadorBlanco img {
   margin: 0 auto;
   /* esto es temporal para poder ver de forma correcta los patros */
   width: 18em;
 }
-
 /*Estilos objetivos*/
 .wrapperObjetivos {
   background-color: #cdd597;
   padding: 5em;
 }
-
 /*Estilos objetivos*/
 .wrapperObjetivos {
   background-color: #cdd597;
   padding: 5em;
 }
-
-
 /* Estilos para las inscripciones */
-
 nav a {
   color: black;
   font-weight: bolder;
@@ -511,23 +545,19 @@ nav a {
   border-radius: 5px;
   position: relative;
 }
-
 h2 {
   font-size: 2.5em;
   color: black;
 }
-
 .contenido {
   text-align: center;
 }
-
 .equipoFormulario {
   background-color: #aaa6a6;
   border-radius: 1em;
   margin: 0 4em;
   padding: 1em;
 }
-
 .jugadores {
   height: 100%;
   display: flex;
@@ -535,7 +565,6 @@ h2 {
   margin: 0;
   /* padding: 0 3em; */
 }
-
 .jugador {
   background-color: #aaa6a6;
   display: flex;
@@ -546,11 +575,9 @@ h2 {
   margin: 1em 4em;
   padding: 1em;
 }
-
 input {
   border-radius: 0.5em;
 }
-
 .formulario {
   background-color: #aaa6a6;
   /* border-radius: 1em; */
@@ -558,7 +585,6 @@ input {
   padding: 1em;
   margin-top: 2em;
 }
-
 footer {
   background-color: #333;
   color: white;
