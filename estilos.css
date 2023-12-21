@@ -330,6 +330,10 @@ h1 img {
   .solidario img {
     display: none;
   }
+
+  .puntuacion tr {
+    font-size: 0.9em;
+  }
 }
 .card .resultado {
   background-color: white;
