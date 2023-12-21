@@ -71,6 +71,8 @@ a {
 .equipo img {
   width: 40%;
   height: 50%;
+  border-radius: 2em; 
+
 }
 
 .galeria img {
@@ -82,7 +84,16 @@ a {
 .equipo {
   border: 1px solid #ddd;
   padding: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  text-align: center; 
+  background-color: whitesmoke;
+}
+.equipo .nombre_equipo{
+background-color: black;
+color: white;
+border-radius: 5em;
+margin: 0 33%;
+
 }
 
 #container-wrapper {
