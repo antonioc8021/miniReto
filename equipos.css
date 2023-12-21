@@ -13,24 +13,45 @@ body {
     min-height: 100vh;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url('./Imagenes/fondocampo2.jpg');
+    background-color: rgb(208, 249, 145);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
+<<<<<<< HEAD
+ 
+.contenedor_centro {
+    margin-top: 2em;
+    background-color: black;
+    width: 80%;
+    border-radius: 1em;
+=======
 
 .contenedor-centro {
+>>>>>>> 13f65d5b3a4545cf8cd6a5e72b05662fa3939ac4
     display: flex;
     margin-left: auto;
     margin-right: auto;
     align-items: center;
     justify-content: center;
+<<<<<<< HEAD
+    text-align: center; /* Agregamos text-align: center aquí */
+
+=======
     height: 100vh;
+>>>>>>> 13f65d5b3a4545cf8cd6a5e72b05662fa3939ac4
 }
 
 h1 {
+<<<<<<< HEAD
+    color:white;
+    background-color: black;
+    text-align: center; 
+    margin: 0 auto; /* Añadimos margin: 0 auto; para centrar horizontalmente */
+=======
     color: white;
     text-align: center; /* Añadido para centrar el texto horizontalmente */
+>>>>>>> 13f65d5b3a4545cf8cd6a5e72b05662fa3939ac4
 }
 
 .cabecera {
@@ -59,17 +80,68 @@ h1 {
 /* Cambiar color del menú al pasar el cursor */
 .cabecera a:hover {
     background-color: #555;
+<<<<<<< HEAD
+  }
+ 
+ 
+  .cuerpo {
+=======
 }
 
 
 .cuerpo {
+>>>>>>> 13f65d5b3a4545cf8cd6a5e72b05662fa3939ac4
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: flex-start;
     padding-top: 70px;
+<<<<<<< HEAD
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+ 
+.entrenador {
+    margin: 0 6%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Puedes ajustar esto según tus preferencias */
+    align-items: flex-start;
+}
+
+.ficha_entrenador{
+    width: 200px;
+    height: 300px;
+    margin: 60px; /* Ajuste del margen para los jugadores */
+    position: relative;
+    cursor: pointer;
+    background-color: black;
+    border-radius: 10px;
+    overflow: hidden;
+    color: white;
+}
+.imagen_entrenador{
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+.ficha_entrenador h2,
+.ficha_entrenador p {
+    margin: 0;
+    text-align: center;
+}
+
+.jugadores {
+    margin: 0 6%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Puedes ajustar esto según tus preferencias */
+    align-items: flex-start;
+}
+=======
     /* Ajuste para evitar que los jugadores se solapen con el menú */
 }
+>>>>>>> 13f65d5b3a4545cf8cd6a5e72b05662fa3939ac4
 
 .ficha_jugador {
     width: 200px;
@@ -78,9 +150,10 @@ h1 {
     /* Ajuste del margen para los jugadores */
     position: relative;
     cursor: pointer;
-    background-color: #57d534;
+    background-color: black;
     border-radius: 10px;
     overflow: hidden;
+    color: white;
 }
 
 .imagen_jugador {
