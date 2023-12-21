@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Torneos</title>
     <link rel="stylesheet" href="estilos.css">
+    <script src="carrusel_torneo.js"></script>
 
 </head>
 
@@ -73,14 +74,14 @@
             <h1>Torneo Deportivo</h1>
             <div class="flex">
                 <div>
-                    <h3>Sistema de competición <a
-                            href="./archivos/Sistemas de competición (Reglamento).docx">(Reglamento)</a>
+                    <h3>Sistema de competición <a href="./Sistemas de competición (Reglamento).docx">(Reglamento)</a>
                     </h3>
                     <p><strong>Duración:</strong> 10 minutos (20 en finales).</p>
                     <p><strong>Jugadores:</strong> 5 titulares obligatorios y 10 supletentes opcionales.</p>
                     <p><strong>Cambios:</strong> ilimitados.</p>
                 </div>
-                <div>
+                <div class="deportivo-img">
+                    <img src="./Imagenes/N1-1.jpg">
                     <img src="./Imagenes/torneo1.jpg">
                 </div>
             </div>
@@ -189,33 +190,35 @@
                     </tr>
                 </table>
             </div>
-            <div>
+            <div class="resultados">
                 <br>
                 <h3>Resultados del Dia</h3>
                 <div class="flex">
                     <div class="card">
-                        <div>
-                            <p>Equipo 1</p>
-                            <p class="resultado">0-0</p>
-                            <p>Equipo 2</p>
-                        </div>
+                        <p>Equipo 1</p>
+                        <p class="resultado">0-0</p>
+                        <p>Equipo 2</p>
                     </div>
                     <div class="card">
-                        <div>
-                            <p>Equipo 1</p>
-                            <p class="resultado">0-0</p>
-                            <p>Equipo 2</p>
-                        </div>
+                        <p>Equipo 1</p>
+                        <p class="resultado">0-0</p>
+                        <p>Equipo 2</p>
                     </div>
                     <div class="card">
-                        <div>
-                            <p>Equipo 1</p>
-                            <p class="resultado">0-0</p>
-                            <p>Equipo 2</p>
-                        </div>
+                        <p>Equipo 1</p>
+                        <p class="resultado">0-0</p>
+                        <p>Equipo 2</p>
                     </div>
                 </div>
                 <br>
+            </div>
+            <div class="">
+                <br>
+                <h3>Galeria</h3>
+                <h4 class="h4-gal">Equipo 1 VS Equipo 2</h4>
+                <div class="galeria-torneo" id="gallery-container1"></div>
+                <h4 class="h4-gal">Dia 1</h4>
+                <div class="galeria-torneo" id="gallery-container2"></div>
             </div>
         </div>
     </div>
