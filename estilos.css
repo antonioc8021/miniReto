@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@100;900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
 
 /*↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ CABECERA ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
 header {
@@ -219,10 +220,44 @@ a {
   width: auto;
 }
 
-.PreguntasFrec {
-  text-align: center;
-  background-color: #09941b;
+/* Estilos Preguntas y respuestas FYQ*/
+.preguntasfrec {
+  margin-top: -30px;
   margin-bottom: 0.2em;
+  text-align: center;
+}
+
+.preguntasfrec h2 {
+  margin: 0 auto;
+  padding: 5px;
+  width: 500px;
+}
+
+.burbuja {
+  padding: 1em;
+  margin: 1em;
+  background-color: #ddd;
+  border-radius: 2em;
+  cursor: pointer;
+}
+
+.pregunta {
+  font-weight: bold;
+  padding-left: 3px;
+}
+
+.respuesta {
+  padding: 10px;
+  display: none;
+}
+
+.flecha {
+  transition: transform 0.3s ease;
+  float: right;
+}
+
+.flecha.arriba {
+  transform: rotate(180deg);
 }
 
 /*↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ PIE ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
@@ -272,19 +307,6 @@ a {
 .redes a {
   display: block;
   margin-top: 10px;
-}
-
-.burbuja {
-  color: white;
-  padding: 1em;
-  margin: 1em;
-  background-color: #2D8E2D;
-  border-radius: 2em;
-}
-
-.pregunta {
-  font-size: 15px;
-  font-weight: bold;
 }
 
 /* estilos torneo*/
