@@ -153,6 +153,7 @@
                 <p>Av. Primero de Mayo, 1, 39011 Santander, Cantabria</p>
                 <p>942 33 74 11</p>
                 <p>Correo electrónico: oficina@iesaglinares.es</p>
+                <a href="fyq.html">Preguntas frecuentes</a>
               </div>
               <div class="redes">
                 <p>Síguenos en redes sociales:</p>
@@ -170,25 +171,34 @@
     <script src="carrusel.js"></script>
     <script>
       document.addEventListener('DOMContentLoaded', function () {
-          let currentSection = 0;
+        let currentSection = 0;
+        let scrollAllowed = true;
 
-          window.addEventListener('wheel', function (e) {
-              e.preventDefault();
+        window.addEventListener('wheel', function (e) {
+          e.preventDefault();
 
-              const delta = e.deltaY;
-              const sections = document.querySelectorAll('.section');
+          if (scrollAllowed) {
+            scrollAllowed = false;
 
-              if (delta > 0 && currentSection < sections.length - 1) {
-                  currentSection++;
-              } else if (delta < 0 && currentSection > 0) {
-                  currentSection--;
-              }
+            const delta = e.deltaY;
+            const sections = document.querySelectorAll('.section');
 
-              const translateY = currentSection * -100;
-              sections.forEach(section => {
-                  section.style.transform = `translateY(${translateY}%)`;
-              });
-          });
+            if (delta > 0 && currentSection < sections.length - 1) {
+              currentSection++;
+            } else if (delta < 0 && currentSection > 0) {
+              currentSection--;
+            }
+
+            const translateY = currentSection * -100;
+            sections.forEach(section => {
+              section.style.transform = `translateY(${translateY}%)`;
+            });
+
+            setTimeout(() => {
+              scrollAllowed = true;
+            }, 800); // Restablece scrollAllowed después de 800 milisegundos (ajusta según sea necesario)
+          }
+        });
       });
   </script>
 </body>
