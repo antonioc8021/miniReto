@@ -170,11 +170,6 @@ a {
   margin-top: 100px;
 }
 
-a {
-  text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 /* Estilo carrusel horizontal */
 .carrusel {
   position: relative;
@@ -501,3 +496,68 @@ h1 img {
 
 
 /* Estilos para las inscripciones */
+
+nav a {
+  color: black;
+  font-weight: bolder;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 5px;
+  position: relative;
+}
+
+h2 {
+  font-size: 2.5em;
+  color: black;
+}
+
+.contenido {
+  text-align: center;
+}
+
+.equipoFormulario {
+  background-color: #aaa6a6;
+  border-radius: 1em;
+  margin: 0 4em;
+  padding: 1em;
+}
+
+.jugadores {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  /* padding: 0 3em; */
+}
+
+.jugador {
+  background-color: #aaa6a6;
+  display: flex;
+  flex-direction: column;
+  width: 13%;
+  border-radius: 1em;
+  flex: 1;
+  margin: 1em 4em;
+  padding: 1em;
+}
+
+input {
+  border-radius: 0.5em;
+}
+
+.formulario {
+  background-color: #aaa6a6;
+  /* border-radius: 1em; */
+  /* margin: 0 4em; */
+  padding: 1em;
+  margin-top: 2em;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
