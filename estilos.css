@@ -115,10 +115,10 @@ a {
   background-color: black;
   color: white;
   font-size: medium;
-  padding: 2%;
-  margin-top: 150px;
+  margin-top: 50px;
+  padding-top: 110px;
+  height: fit-content;
   flex-direction: column; /* Cambiado de row a column para apilar los elementos verticalmente */
-  height: 100%; /* Cambiado de 100% a auto para permitir que la altura se ajuste según el contenido */
   display: flex;
   justify-content: space-between;
 }
@@ -201,7 +201,7 @@ a {
   display: flex;
   justify-content: space-between;
   text-align: center;
-  margin-bottom: 0;
+  margin-bottom: 1%;
 }
 #section4  .pie_pagina #map .contacto_pie {
   text-align: center;
@@ -215,15 +215,22 @@ a {
 }
 #section4 a {
   margin: 0 10px;
+  color: white;
+  text-decoration: underline;
+}
+#section4 .foto_pie_pagina #imagen_pie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #section4 .foto_pie_pagina #imagen_pie img {
-  width: 1800px; /* Ajusta el ancho máximo según sea necesario */
-  height: 700px;
+  width: 100%; /* Asegura que la imagen no se extienda más allá de su tamaño original */
+  height: 610px; /* Asegura que la imagen no se extienda más allá de su tamaño original */
+  padding-bottom: 60px;
 }
 #map iframe {
   width: 300px;
   height: 150px;
-  margin-bottom: 20px; /* Agregamos un margen inferior para separar del siguiente contenido */
 }
 .redes p {
   text-align: center;
