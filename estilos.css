@@ -440,18 +440,35 @@ h1 img {
 
 /* Patrocinadores */
 .cuerpoPatrocinadores {
-  background-color: #2D8E2D;
+  background-color: white;
 }
 
 .patrocinadores {
-  padding: 1em 1em;
+  padding: 1em 4em;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-
 }
 
-.patrocinador {
+.patrocinadores .titulo {
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.patrocinadorVerde {
+  color: white;
+  text-align: center;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1em;
+  background-color: #2D8E2D;
+  border-radius: 1em;
+  margin-bottom: 2em;
+}
+
+.patrocinadorBlanco {
+
   text-align: center;
   align-content: center;
   display: flex;
@@ -462,7 +479,13 @@ h1 img {
   margin-bottom: 2em;
 }
 
-.patrocinador img {
+.patrocinadorVerde img {
+  margin: 0 auto;
+  /* esto es temporal para poder ver de forma correcta los patros */
+  width: 18em;
+}
+
+.patrocinadorBlanco img {
   margin: 0 auto;
   /* esto es temporal para poder ver de forma correcta los patros */
   width: 18em;
