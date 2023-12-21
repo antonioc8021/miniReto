@@ -100,7 +100,7 @@ a {
   margin-top: 100px;
 }
 #section3 .patrocinadores p {
-  margin-top: 100px;
+  margin-top: 70px;
   margin-bottom: 10px;
   text-align: center;
   font-weight: bolder;
@@ -116,7 +116,7 @@ a {
   color: white;
   font-size: medium;
   padding: 2%;
-  margin-top: 100px;
+  margin-top: 150px;
   flex-direction: column; /* Cambiado de row a column para apilar los elementos verticalmente */
   height: 100%; /* Cambiado de 100% a auto para permitir que la altura se ajuste según el contenido */
   display: flex;
@@ -217,7 +217,7 @@ a {
   margin: 0 10px;
 }
 #section4 .foto_pie_pagina #imagen_pie img {
-  width: auto; /* Ajusta el ancho máximo según sea necesario */
+  width: 1800px; /* Ajusta el ancho máximo según sea necesario */
   height: 700px;
 }
 #map iframe {
