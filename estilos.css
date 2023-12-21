@@ -1,33 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@100;900&display=swap');
 
+/*↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ CABECERA ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
 header {
   padding: 10px;
   margin-bottom: 10px;
   text-align: center;
 }
-
-/* Ajustes para el contenido debajo del menú fijo */
-body {
-  font-family: 'Montserrat', sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.section {
-  height: 100vh;
-  width: 100%;
-  font-size: 2em;
-  transition: transform 0.8s ease-in-out;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-#section2 {
-  background-color: white;
-}
-
 /* Estilos para el menú fijo */
 .cabecera {
   background-color: #333;
@@ -39,7 +18,6 @@ body {
   transition: background-color 0.3s;
   /* Agregamos transición para el cambio de color */
 }
-
 .cabecera a {
   color: white;
   font-family: 'Roboto';
@@ -51,61 +29,115 @@ body {
   border-radius: 5px;
   position: relative;
 }
-
 /* Cambiar color del menú al pasar el cursor */
 .cabecera a:hover {
   background-color: #555;
 }
 
-/* Añade un espacio al cuerpo para evitar solapamiento con el menú fijo
+/*↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ CUERPO ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
+/*Añade un espacio al cuerpo para evitar solapamiento con el menú fijo*/
 .cuerpo {
   padding-top: 80px;
-  Ajusta este valor según sea necesario 
-} */
-
-
-main h1 {
+  /*Ajusta este valor según sea necesario*/
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  max-height: 100vh;
+}
+.equipo img {
+  width: 40%;
+  height: 50%;
+}
+.galeria img {
+  width: 100%;
+  height: 952.5px;
+  margin-bottom: 20px;
+}
+.equipo {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+#container-wrapper {
+  overflow: hidden;
+}
+.section {
+  flex: 1;
+  width: 100%;
+  height: 100vh;
+  font-size: 2em;
+  scroll-snap-align: start;
+  transition: transform 0.8s ease-in-out;
+  margin: 0;
+  box-sizing: border-box;
+}
+#section1 h1 {
   text-decoration: underline;
   text-align: center;
   margin-top: 200px;
+}
+#section2 p {
+  margin: 0 50px;
+  font-family: 'Montserrat';
+  text-align: justify;
+  padding-bottom: 20px;
+}
+#section2 h1 {
+  text-decoration: underline;
+  text-align: center;
+  margin-top: 100px;
+}
+#section3 .patrocinadores p {
+  margin-top: 100px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bolder;
+}
+#section3 .colaboradores p {
+  margin: 0;
+  text-align: center;
+  font-weight: bolder;
+}
+#section4 .pie_pagina {
+  font-family: 'Roboto';
+  background-color: black;
+  color: white;
+  font-size: medium;
+  padding: 2%;
+  margin-top: 100px;
+  flex-direction: column; /* Cambiado de row a column para apilar los elementos verticalmente */
+  height: 100%; /* Cambiado de 100% a auto para permitir que la altura se ajuste según el contenido */
+  display: flex;
+  justify-content: space-between;
+}
+.patrocinadores {
+  text-align: center;
+}
+.fila-patrocinadores {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.columna-patrocinadores {
+  margin: 50px; /* Espacio entre las imágenes */
+}
+/* Estilo opcional para cambiar el tamaño de las imágenes */
+.columna-patrocinadores img {
+  width: 200px; /* Ajusta el tamaño según sea necesario */
+  height: auto;
+  color: transparent;
 }
 .objetivos-patrocinadores h1 {
   text-decoration: underline;
   text-align: center;
   margin-top: 100px;
 }
-
 a {
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
 }
-
-.equipo img {
-  width: 40%;
-  height: 50%;
-}
-
-.galeria img {
-  width: 100%;
-  height: 950px;
-  margin-bottom: 20px;
-}
-
-.equipo {
-  border: 1px solid #ddd;
-  padding: 10px;
-  margin-bottom: 20px;
-}
-
-footer {
-  display: flex;
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 1em;
-}
-
-
 /* Estilo carrusel horizontal */
 .carrusel {
   position: relative;
@@ -113,33 +145,27 @@ footer {
   overflow: hidden;
   margin-bottom: 20px; /* Agregamos un margen inferior para separar del siguiente contenido */
 }
-
 .carrusel-container {
   display: flex;
   transition: transform 0.5s ease-in-out;
 }
-
 .carrusel-item {
   min-width: 100%;
 }
-
 .carrusel-item img {
   width: 50%; /* Ajustamos el ancho de la imagen al 100% */
   height: auto;
   margin-left: 25%;
 }
-
 /* Estilos para la sección de pie (footer) */
 .wrapper {
   display: flex;
   flex-direction: column;
 }
-
 .cuerpo .profesores {
   text-align: center;
   display: flex;
 }
-
 .profesores img {
   display: flex;
   height: 35em;
@@ -147,133 +173,53 @@ footer {
   margin: 1em;
   text-align: center;
 }
-
-/* Estilos para la sección de pie (footer) */
-
-.pie {
-  padding: 0.3em;
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  font-size: small;
-}
-
-/* Añade estilos para los enlaces dentro de la sección de pie */
-.pie a {
-  color: inherit;
-  /* hereda el color del texto del elemento padre */
-  text-decoration: none;
-  /* quita la subrayado predeterminado */
-}
-
-.pie img {
-  height: 10%;
-  width: auto;
-  margin-bottom: 1em;
-}
-
 .contacto img {
   max-height: 100px;
   width: auto;
 }
-
 .PreguntasFrec {
   text-align: center;
   background-color: #09941b;
   margin-bottom: 0.2em;
 }
-/* Estilos para la sección de preguntas frecuentes (FYQ) */
-.FYQ {
-  text-align: left;
-  padding: 0;
-  margin-top: 0%;
+/*↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ PIE ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
+/* Estilos para la sección de información de contacto */
 
-}
-
-/* Estilos para el título h3 dentro de FYQ */
-.FYQ h2 {
-  color: aliceblue;
-  text-decoration: underline;
-}
-.FYQ h3 {
-  text-decoration: underline;
-}
-
-/* Estilos para el enlace dentro de la sección FYQ */
-.FYQ h3 a {
-  text-decoration: none;
-  color: inherit;
-  /* Tomar el color del texto del contenedor padre (sin color de enlace) */
-}
-
-
-/* Estilos para las columnas de imágenes */
-.columnas {
+#section4  .pie_pagina #map {
   display: flex;
-  flex-wrap: wrap;
-}
-
-/* Estilos para cada columna de imágenes */
-.columna {
-  width: 100%;
-  /* Ajustar el ancho para que haya espacio para tres columnas */
-  box-sizing: border-box;
-  /* Evita que el padding y el borde afecten el ancho total */
-  padding: 10px;
-  /* Agrega un poco de espacio entre las imágenes */
-}
-
-/* Añadir estilos adicionales según sea necesario */
-.columna img {
-  width: 30%;
-  /* Hace que las imágenes ocupen el 100% del ancho de su contenedor */
-  height: auto;
-  /* Mantiene la proporción de la imagen */
-}
-
-
-/* estilos para los organizadores */
-.wrapper {
-  display: flex;
-  flex-direction: column;
-}
-
-.cuerpo .profesores {
+  justify-content: space-between;
   text-align: center;
-  display: flex;
+  margin-bottom: 0;
 }
-
-.profesores img {
-  height: 100%;
-  width: 100%;
-}
-
-/* Estilos para la sección de pie (footer) */
-.pie {
-  padding: 0.3em;
+#section4  .pie_pagina #map .contacto_pie {
   text-align: center;
-  display: flex;
-  flex-direction: row;
 }
-
-.pie img {
-  height: 50px;
-  width: auto;
-  margin-bottom: 10px;
+#section4 .pie_pagina .redes {
+  text-align: center;
 }
-
-.contacto img {
-  max-height: 100px;
-  width: auto;
+#section4 p {
+  margin: 5px 0;
+  padding: 5px;
 }
-
-
-/* Estilos para el enlace dentro de FYQ */
-.FYQ a {
-  text-decoration: none;
-  color: inherit;
+#section4 a {
+  margin: 0 10px;
 }
-
+#section4 .foto_pie_pagina #imagen_pie img {
+  width: auto; /* Ajusta el ancho máximo según sea necesario */
+  height: 700px;
+}
+#map iframe {
+  width: 300px;
+  height: 150px;
+  margin-bottom: 20px; /* Agregamos un margen inferior para separar del siguiente contenido */
+}
+.redes p {
+  text-align: center;
+}
+.redes a {
+  display: block;
+  margin-top: 10px;
+}
 .burbuja {
   color: white;
   padding: 1em;
@@ -281,15 +227,10 @@ footer {
   background-color: #2D8E2D;
   border-radius: 2em;
 }
-
 .pregunta {
-  /* todo: hablarlo en la reunión */
   font-size: 15px;
   font-weight: bold;
-  /* text-decoration: underline; */
-
 }
-
 /* estilos torneo*/
 .solidario {
   background-color: #DDDDDD;
@@ -297,86 +238,54 @@ footer {
   padding: 30px;
   margin-bottom: 30px;
 }
-
 .solidario img {
   float: right;
   clip-path: inset(3% 10% 12% 40%);
-  margin: -20px -100px 0 -370px;
+  margin: -20px 0 0 -370px;
   height: 670px;
   width: auto;
   overflow: hidden;
 }
-
-/* estilos torneo*/
-.solidario {
-  background-color: #DDDDDD;
-  margin-top: 0;
-  padding: 30px;
-  margin-bottom: 30px;
-}
-
-.solidario img {
-  float: right;
-  clip-path: inset(3% 10% 12% 40%);
-  margin: -20px -100px 0 -370px;
-  height: 670px;
-  width: auto;
-  overflow: hidden;
-}
-
-
 h1 img {
   max-height: 1em;
 }
-
 .puntuacion th,
 .puntuacion td {
   width: 27vh;
   text-align: center;
 }
-
 .puntuacion th {
   background-color: rgb(90, 207, 54);
 }
-
 .puntuacion tr:nth-child(even) {
   background-color: #f2f2f2;
 }
-
 .puntuacion tr:nth-child(odd) {
   background-color: #ffffff;
 }
-
 .deportivo {
   background-color: #DDDDDD;
   /*width: 100%;*/
   padding: 30px;
   margin-bottom: 30px;
 }
-
 .deportivo img {
   display: inline;
   height: 200px;
   width: auto;
 }
-
 .flex {
   display: flex;
 }
-
-
 .flex div {
   flex: 1;
 }
-
 .card {
   flex: 1;
 }
-
 .card * {
   display: inline;
 }
-
 .card>div {
   border: 1px solid black;
   border-radius: 6px;
@@ -385,79 +294,37 @@ h1 img {
   background-color: black;
   color: white;
 }
-
 .card .resultado {
   background-color: white;
   padding: 10px;
   color: black;
   font-weight: bold;
 }
-
-
 .despl {
   /*scroll-snap:mandatory*/
   overflow-x: scroll;
   overflow-y: hidden;
 }
-
 h4 {
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   padding: 5px;
   background-color: #DDDDDD;
 }
-
-/*Carrusel de torneo*/
-.carrusel_torneo {
-  text-align: center;
-}
-
-.carrusel-container_torneo {
-  display: flex;
-  overflow: hidden;
-  width: 100%;
-  margin-bottom: 20px;
-}
-
-.carrusel-item_torneo {
-  flex: 0 0 33.33%;
-  /* Cada imagen ocupa un tercio del contenedor */
-  flex: 0 0 33.33%;
-  /* Cada imagen ocupa un tercio del contenedor */
-  box-sizing: border-box;
-}
-
-.flecha-izquierda,
-.flecha-derecha {
-  cursor: pointer;
-  font-size: 24px;
-  margin: 0 10px;
-}
-
-/* Estilos del contenedor del carrusel y del día */
-.flex.despl {
-  justify-content: center;
-  align-items: center;
-}
-
 /* Patrocinadores */
 .patrocinadores {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-
 }
-
 .patrocinador {
   margin-bottom: 2em;
 }
-
 .patrocinador img {
   /* esto es temporal para poder ver de forma correcta los patros */
   height: 6em;
   width: auto;
 }
-
 /*Estilos objetivos*/
 .wrapperObjetivos {
   background-color: #cdd597;
