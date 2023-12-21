@@ -429,9 +429,17 @@ h1 img {
   border-radius: 4px;
 }
 
+
 /* Patrocinadores */
-.cuerpoPatrocinadores {
+.patrocinadores .titulo {
+  margin: 1em;
   background-color: white;
+  text-align: center;
+  border-radius: 1em;
+}
+
+.cuerpoPatrocinadores {
+  background-color: rgb(222, 218, 218);
 }
 
 .patrocinadores {
@@ -446,21 +454,9 @@ h1 img {
   font-size: 2.5em;
 }
 
-.patrocinadorVerde {
-  color: white;
-  text-align: center;
-  align-content: center;
-  display: flex;
-  flex-direction: column;
-  padding: 0 1em;
-  background-color: #2D8E2D;
-  border-radius: 1em;
-  margin-bottom: 2em;
-}
-
-.patrocinadorBlanco {
-
-  text-align: center;
+.patrocinador {
+  color: black;
+  text-align: justify;
   align-content: center;
   display: flex;
   flex-direction: column;
@@ -468,15 +464,10 @@ h1 img {
   background-color: white;
   border-radius: 1em;
   margin-bottom: 2em;
+
 }
 
-.patrocinadorVerde img {
-  margin: 0 auto;
-  /* esto es temporal para poder ver de forma correcta los patros */
-  width: 18em;
-}
-
-.patrocinadorBlanco img {
+.patrocinador img {
   margin: 0 auto;
   /* esto es temporal para poder ver de forma correcta los patros */
   width: 18em;
