@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@100;900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
 
 /*↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ CABECERA ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
 header {
@@ -125,11 +126,13 @@ a {
   font-weight: bolder;
 }
 
+
 #section3 .colaboradores p {
   margin: 0;
   text-align: center;
   font-weight: bolder;
 }
+
 
 #section4 .pie_pagina {
   font-family: 'Roboto';
@@ -140,14 +143,17 @@ a {
   padding-top: 110px;
   height: fit-content;
   flex-direction: column;
+
   /* Cambiado de row a column para apilar los elementos verticalmente */
   display: flex;
   justify-content: space-between;
 }
 
+
 .patrocinadores {
   text-align: center;
 }
+
 
 .fila-patrocinadores {
   display: flex;
@@ -155,10 +161,12 @@ a {
   align-items: center;
 }
 
+
 .columna-patrocinadores {
   margin: 50px;
   /* Espacio entre las imágenes */
 }
+
 
 /* Estilo opcional para cambiar el tamaño de las imágenes */
 .columna-patrocinadores img {
@@ -224,10 +232,44 @@ a {
   width: auto;
 }
 
-.PreguntasFrec {
-  text-align: center;
-  background-color: #09941b;
+/* Estilos Preguntas y respuestas FYQ*/
+.preguntasfrec {
+  margin-top: -30px;
   margin-bottom: 0.2em;
+  text-align: center;
+}
+
+.preguntasfrec h2 {
+  margin: 0 auto;
+  padding: 5px;
+  width: 500px;
+}
+
+.burbuja {
+  padding: 1em;
+  margin: 1em;
+  background-color: #ddd;
+  border-radius: 2em;
+  cursor: pointer;
+}
+
+.pregunta {
+  font-weight: bold;
+  padding-left: 3px;
+}
+
+.respuesta {
+  padding: 10px;
+  display: none;
+}
+
+.flecha {
+  transition: transform 0.3s ease;
+  float: right;
+}
+
+.flecha.arriba {
+  transform: rotate(180deg);
 }
 
 /*↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ PIE ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
@@ -502,8 +544,20 @@ h1 img {
   font-size: 2.5em;
 }
 
-.patrocinador {
-  color: black;
+.patrocinadorVerde {
+  color: white;
+  text-align: center;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1em;
+  background-color: #2D8E2D;
+  border-radius: 1em;
+  margin-bottom: 2em;
+}
+
+.patrocinadorBlanco {
+
   text-align: center;
   align-content: center;
   display: flex;
@@ -514,13 +568,13 @@ h1 img {
   margin-bottom: 2em;
 }
 
-.patrocinador img {
+.patrocinadorVerde img {
   margin: 0 auto;
   /* esto es temporal para poder ver de forma correcta los patros */
   width: 18em;
 }
 
-.patrocinador img {
+.patrocinadorBlanco img {
   margin: 0 auto;
   /* esto es temporal para poder ver de forma correcta los patros */
   width: 18em;

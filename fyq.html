@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
     <link rel="stylesheet" href="estilos.css">
+    <script src="fyq.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-qPuOrkohKnWJLNrW91YfQeBK7Q8CyK8PAJ7cGezN/O6Sm2InF5T/yo6M4+Qi+qooN0F+wnf0zCFfW3pnGXqz/jQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -25,74 +29,54 @@
         </div>
         <br>
         <div class="cuerpo">
-            <div class="FYQ">
-                <div class="PreguntasFrec">
-                    <p>
-                    <h2>Preguntas frecuentes</h2>
-                    </p>
-                </div>
-                <div class="columnas">
-                    <div class="columna1">
-                        <!-- Primera columna de preguntas -->
-                        <div class="burbuja">
-                            <p>
-                                <pregunta>
-                                    ¿Cuándo se celebra el torneo?
-                                    <br>
-                                </pregunta>
-                                Se celebra el jueves 14 y el viernes 15 de marzo en el horario de mañana y tarde.
-                            </p>
-                        </div>
-                        <div class="burbuja">
-                            <p>
-                                <pregunta>
-                                    ¿Cómo puedo ayudar en el torneo solidario? <br>
-                                </pregunta>
-                                Si soy estudiante puedo prestar ayuda organizando el torneo o recogiendo comida y si no
-                                soy estudiante puedo ayudar donando comida para el torneo.
-                            </p>
-                        </div>
-                        <div class="burbuja">
-                            <p>
-                                <pregunta>
-                                    ¿Dónde podré depositar la comida que pueda donar? <br>
-                                </pregunta>
-                                Si quiere donar comida puede enviar un correo al correo
-                                <a href="mailto:info@iesaugustocup.es">info@iesaugustocup.es</a> para solicitar más
-                                información, y si no puede ir al pabellón del instituto donde habrá cajas donde pueda
-                                depositar la comida que esté dispuesto a donar.
-                            </p>
-                        </div>
+            <div class="preguntasfrec">
+                <h2>Preguntas frecuentes</h2>
+            </div>
+            <div class="columnas">
+                <div class="columna1">
+                    <!-- Primera columna de preguntas -->
+                    <div class="burbuja" onclick="mostrarRespuesta(this)">
+                        <i class="flecha fas fa-chevron-up"></i>
+                        <h4 class="pregunta">¿Cuándo se celebra el torneo?</h4>
+                        <p class="respuesta">Se celebra el jueves 14 y el viernes 15 de marzo en el horario de mañana y
+                            tarde.</p>
                     </div>
-                    <div class="columna2">
-                        <!-- Segunda columna de preguntas -->
-                        <div class="burbuja">
-                            <p>
-                                <pregunta>
-                                    ¿Dónde irán a parar todos los fondos que se recaudarán durante el torneo?
-                                    <br>
-                                </pregunta>
-                                Irán destinadas a familias o a personas que lo necesiten con urgencia, como puede ser
-                                familias ucranianas que se vieron obligadas a venir a España.
-                            </p>
-                        </div>
-                        <div class="burbuja">
-                            <p>
-                                <pregunta>
-                                    ¿Quién repartirá todos los kilos de comida recaudados? <br>
-                                </pregunta>
-                                Los kilos recaudados lo repartirían las ONGS que participen en el torneo.
-                            </p>
-                        </div>
-                        <div class="burbuja">
-                            <p>
-                                <pregunta>
-                                    ¿Dónde puedo ver los partidos si no he podido verlos en directo? <br>
-                                </pregunta>
-                                En nuestra red social Twitch puede ver todos los partidos que se han jugado en esta
-                                segunda versión de la IES Augusto Cup.
-                            </p>
-                        </div>
+                    <div class="burbuja" onclick="mostrarRespuesta(this)">
+                        <i class="flecha fas fa-chevron-up"></i>
+                        <h4 class="pregunta">¿Cómo puedo ayudar en el torneo solidario?</h4>
+                        <p class="respuesta">Si soy estudiante puedo prestar ayuda organizando el torneo o recogiendo
+                            comida y si no
+                            soy estudiante puedo ayudar donando comida para el torneo.</p>
+                    </div>
+                    <div class="burbuja" onclick="mostrarRespuesta(this)">
+                        <i class="flecha fas fa-chevron-up"></i>
+                        <h4 class="pregunta">¿Dónde podré depositar la comida que pueda donar?</h4>
+                        <p class="respuesta">Si quiere donar comida puede enviar un correo al correo
+                            <a href="mailto:info@iesaugustocup.es">info@iesaugustocup.es</a> para solicitar más
+                            información, y si no puede ir al pabellón del instituto donde habrá cajas donde pueda
+                            depositar la comida que esté dispuesto a donar.
+                        </p>
+                    </div>
+                    <div class="burbuja" onclick="mostrarRespuesta(this)">
+                        <i class="flecha fas fa-chevron-up"></i>
+                        <h4 class="pregunta">¿Dónde irán a parar todos los fondos que se recaudarán durante el torneo?
+                        </h4>
+                        <p class="respuesta">Irán destinadas a familias o a personas que lo necesiten con urgencia, como
+                            puede ser
+                            familias ucranianas que se vieron obligadas a venir a España.</p>
+                    </div>
+                    <div class="burbuja" onclick="mostrarRespuesta(this)">
+                        <i class="flecha fas fa-chevron-up"></i>
+                        <h4 class="pregunta">¿Quién repartirá todos los kilos de comida recaudados?</h4>
+                        <p class="respuesta">Los kilos recaudados lo repartirían las ONGS que participen en el torneo.
+                        </p>
+                    </div>
+                    <div class="burbuja" onclick="mostrarRespuesta(this)">
+                        <i class="flecha fas fa-chevron-up"></i>
+                        <h4 class="pregunta">¿Dónde puedo ver los partidos si no he podido verlos en directo?</h4>
+                        <p class="respuesta">En nuestra red social Twitch puede ver todos los partidos que se han jugado
+                            en esta
+                            segunda versión de la IES Augusto Cup.</p>
                     </div>
                 </div>
             </div>
@@ -100,26 +84,29 @@
         </section>
         <section class="pie_pagina">
             <section id="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2896.618601921634!2d-3.8532828845584204!3d43.447680979128826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4949bb2a323c29%3A0xcbc1863c74913b6d!2sIES%20Augusto%20Gonz%C3%A1lez%20de%20Linares!5e0!3m2!1ses!2ses!4v1652440036141!5m2!1ses!2ses"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2896.618601921634!2d-3.8532828845584204!3d43.447680979128826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4949bb2a323c29%3A0xcbc1863c74913b6d!2sIES%20Augusto%20Gonz%C3%A1lez%20de%20Linares!5e0!3m2!1ses!2ses!4v1652440036141!5m2!1ses!2ses"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 <div class="contacto_pie">
-                <p>Contáctenos:</p>
-                <p>Av. Primero de Mayo, 1, 39011 Santander, Cantabria</p>
-                <p>942 33 74 11</p>
-                <p>Correo electrónico: oficina@iesaglinares.es</p>
-                <a href="fyq.html">Preguntas frecuentes</a>
+                    <p>Contáctenos:</p>
+                    <p>Av. Primero de Mayo, 1, 39011 Santander, Cantabria</p>
+                    <p>942 33 74 11</p>
+                    <p>Correo electrónico: oficina@iesaglinares.es</p>
+                    <a href="fyq.html">Preguntas frecuentes</a>
                 </div>
                 <div class="redes">
-                <p>Síguenos en redes sociales:</p>
-                <a href="https://www.instagram.com/ies_augusto_cup/" target="_blank"><img src="./Imagenes/imagenes_patrocinadores/logoInstagram.jpg" alt="Instagram"></a>
+                    <p>Síguenos en redes sociales:</p>
+                    <a href="https://www.instagram.com/ies_augusto_cup/" target="_blank"><img
+                            src="./Imagenes/imagenes_patrocinadores/logoInstagram.jpg" alt="Instagram"></a>
                 </div>
             </section>
             <section class="foto_pie_pagina">
-            <div id="imagen_pie">
-                <a href="https://www.iesaglinares.com/"><img src="./Imagenes/imagenes_patrocinadores/I.E.S AGUSTO.jpg" alt="Augusto Gonzaléz de Linares">
-                </a>
-            </div>
-            </section> 
+                <div id="imagen_pie">
+                    <a href="https://www.iesaglinares.com/"><img
+                            src="./Imagenes/imagenes_patrocinadores/I.E.S AGUSTO.jpg" alt="Augusto Gonzaléz de Linares">
+                    </a>
+                </div>
+            </section>
         </section>
     </div>
 </body>
