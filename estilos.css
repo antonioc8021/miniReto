@@ -73,7 +73,7 @@ a {
 .equipo img {
   width: 40%;
   height: 50%;
-  border-radius: 2em; 
+  border-radius: 2em;
 
 }
 
@@ -87,14 +87,15 @@ a {
   border: 1px solid #ddd;
   padding: 10px;
   margin-bottom: 30px;
-  text-align: center; 
+  text-align: center;
   background-color: whitesmoke;
 }
-.equipo .nombre_equipo{
-background-color: black;
-color: white;
-border-radius: 5em;
-margin: 0 33%;
+
+.equipo .nombre_equipo {
+  background-color: black;
+  color: white;
+  border-radius: 5em;
+  margin: 0 33%;
 
 }
 
@@ -573,11 +574,13 @@ h1 img {
   /* esto es temporal para poder ver de forma correcta los patros */
   width: 18em;
 }
+
 .patrocinadorBlanco img {
   margin: 0 auto;
   /* esto es temporal para poder ver de forma correcta los patros */
   width: 18em;
 }
+
 /* Estilos para las inscripciones */
 nav a {
   color: black;
@@ -625,6 +628,7 @@ h2 {
   padding: 1em;
 }
 
+
 input {
   border-radius: 0.5em;
 }
@@ -643,6 +647,7 @@ footer {
   text-align: center;
   padding: 1em;
 }
+
 /* Contenedor principal */
 .objetivos_torneo {
   padding-top: 100px;
@@ -689,6 +694,13 @@ footer {
   box-sizing: border-box;
 }
 
+.objetivo_esp {
+  flex: 0 0 30%;
+  margin: 5px;
+  border-radius: 1em;
+  box-sizing: border-box;
+}
+
 /* Estilos para las imágenes dentro de los objetivos */
 .objetivo img {
   max-width: 100%;
@@ -696,6 +708,15 @@ footer {
   border-radius: 8px;
   max-height: 100px;
 }
+
+.objetivo_esp img {
+  border: 7px solid black;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  max-height: 100px;
+}
+
 
 /* Tu CSS existente */
 /* Agrega tus reglas de estilo aquí según tus necesidades */
