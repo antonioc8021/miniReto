@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.css">
     <title>Objetivos</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
-    <div class="wrapperObjetivos">
         <div class="header">
             <header class="cabecera">
                 <nav>
@@ -23,52 +23,74 @@
                 </nav>
             </header>
         </div>
-        <!--Aqui veremos los equipos son 10, cada equipo tendra un html propio con su foto, entrenador y un maximo de 10 jugadores.-->
         <div class="objetivos_torneo">
-            <h1>Objetivos torneo</h1>
-            <h2>1 Recaudar más de una tonelada de alimentos</h2>
-            <p>Uno de los principales objetivos de nuestro torneo es contribuir activamente a la lucha contra el
-                hambre. Nos hemos propuesto recolectar más de una tonelada de alimentos durante el evento para donar
-                a organizaciones locales que trabajan en la distribución de alimentos a comunidades necesitadas.</p>
-            <h2>2.Contribuir a los objeticos de desarrollo sostenible</h2>
-            <p>Nuestro torneo está alineado con los Objetivos de Desarrollo Sostenible (ODS) establecidos por las
-                Naciones Unidas. En particular, nos enfocamos en los siguientes tres ODS:</p>
-            <h3>a. ODS 2: Hambre Cero</h3>
-            <p>Luchamos por erradicar el hambre y garantizar el acceso universal a alimentos nutritivos.</p>
-            <h3>b. ODS 3: Salud y Bienestar</h3>
-            <p>Promovemos un estilo de vida activo y saludable a través del deporte, fomentando el bienestar físico
-                y mental.</p>
-            <!--educacion de calidad, darle un vistazo-->
-            <h3>c. ODS 17: Alianzas para Lograr Objetivos</h3>
-            <p>Buscamos establecer colaboraciones sólidas con organizaciones, empresas y la comunidad en general
-                para maximizar el impacto positivo de nuestro torneo.</p>
-            <!--poner que se quieren visibilizar las ODS-->
-            <h2>3. Misión del Torneo</h2>
-            <p>Nuestra misión es utilizar la pasión por el fútbol como un vehículo para generar un cambio positivo
-                en la sociedad.
-                Queremos inspirar a la comunidad a unirse en la lucha contra el hambre y promover valores
-                fundamentales como la solidaridad, la inclusión y la responsabilidad social.</p>
-            <!--Vision del torneo a largo plazo-->
-            <h2>4.Evolucion del torneo</h2>
-            <p>Visualizamos que nuestro torneo evolucione a lo largo del tiempo, expandiendo su alcance y aumentando
-                su impacto.</p>
-            <!--Relacionar los valores con los ods que se trabajan , sin decirlo directamente pero si que el usuario se de cuenta-->
-            <h2>5.Valores del proyecto</h2>
-            <p>En el centro de nuestro proyecto se encuentran los siguientes valores:</p>
-            <h3>a. Solidaridad</h3>
-            <p>Fomentamos la unidad y la colaboración para superar los desafíos sociales, trabajando juntos en pro
-                de un objetivo común.</p>
-            <h3>b. Inclusión</h3>
-            <p>El torneo es un espacio abierto para todos, sin importar su origen, género o habilidades. Creemos en
-                la inclusión y la diversidad como impulsores de la fortaleza de nuestra comunidad.</p>
-            <h3>c. Responsabilidad Social</h3>
-            <p>Nos comprometemos a ser agentes de cambio positivo, tomando medidas responsables y sostenibles para
-                mejorar la calidad de vida de quienes nos rodean.</p>
-
-            <p>Únete a nosotros en este emocionante viaje, donde el fútbol se convierte en una herramienta poderosa
-                para el bien social.</p>
+            <div class="objetivo-info">
+            <h1>Objetivos de Desarrollo Sostenible</h1>
+                <h1>Los 17 ods son medidas adoptadas por los líderes mundiales para proteger el planeta, luchar contra la pobreza y tratar de erradicarla con el objetivo de construir un mundo más próspero, justo y sostenible para las generaciones futuras.</h1>
+            </div>
+            <main class="main-container">
+<!-- ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ bloque1 ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ -->
+                <div class="objetivo">
+                    <img src="./Imagenes/Desarrollo_Sostenible/fin_pobreza.png" alt="Fin pobreza">
+                </div>
+                <div class="objetivo">  
+                    <img src="./Imagenes/Desarrollo_Sostenible/hambre_cero.png" alt="Hambre cero">
+                </div>
+                <div class="objetivo">  
+                    <img src="./Imagenes/Desarrollo_Sostenible/salud_bienestar.png" alt="Salud y bienestar">
+                </div>
+<!-- ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ bloque2 ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ -->
+                <div class="objetivo">
+                    <img src="./Imagenes/Desarrollo_Sostenible/educacion.png" alt="Educación de calidad">
+                </div>
+                <div class="objetivo">
+                    <img src="./Imagenes/Desarrollo_Sostenible/igualdad_genero.png" alt="Igualdad de género">
+                </div>
+                <div class="objetivo">
+                    <img src="./Imagenes/Desarrollo_Sostenible/agua_sanamiento.png" alt="Agua limpia y saneamiento">
+                </div>
+<!-- ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ bloque3 ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ -->
+                <div class="objetivo">
+                    <img src="./Imagenes/Desarrollo_Sostenible/energia.png" alt="Energía asequible y no contaminante">
+                </div>
+                <div class="objetivo">
+                    <img src="./Imagenes/Desarrollo_Sostenible/trabajo_crecimiento_economico.png" alt="Trabajo decemte y crecimiento económico">
+                </div>
+                <div class="objetivo">
+                    <img src="./Imagenes/Desarrollo_Sostenible/industria.png" alt="Industria, innovación e infraestructura">
+                </div>
+<!-- ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ bloque4 ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ -->
+                <div class="objetivo">
+                    <img src="./Imagenes/Desarrollo_Sostenible/desigualdades.png" alt="Reducción de las desigualdades">
+                </div>
+                <div class="objetivo">
+                    <img src="./Imagenes/Desarrollo_Sostenible/comunidad.png" alt="Ciudades y comunidades sostenibles">
+                </div>
+                <div class="objetivo">
+                    <img src="./Imagenes/Desarrollo_Sostenible/produccion.png" alt="Producción y consumo responsables">
+                </div>
+<!-- ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ bloque5 ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ -->
+                <div class="objetivo">
+                    <img src="./Imagenes/Desarrollo_Sostenible/accion_clima.png" alt="Acción por el clima">
+                </div>
+                <div class="objetivo">
+                    <img src="./Imagenes/Desarrollo_Sostenible/vida_submarina.png" alt="Vida submarina">
+                </div>
+                <div class="objetivo">
+                    <img src="./Imagenes/Desarrollo_Sostenible/vida_ecosistema_terrestre.png" alt="Vida de ecosistema terrestre">
+                </div>
+<!-- ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ bloque6 ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ -->
+                <div class="objetivo">    
+                    <img src="./Imagenes/Desarrollo_Sostenible/paz_justicia.png" alt="Paz, justicia e instituciones sólidas">
+                </div>
+                <div class="objetivo">
+                    <img src="./Imagenes/Desarrollo_Sostenible/alianza.png" alt="Alianzas para los objetivos">
+                </div>
+                <div class="objetivo">
+                    <img src="./Imagenes/Desarrollo_Sostenible/objetivos.png" alt="Objetivos de desarrollo sostenible">
+                </div>
+            </main>
         </div>
-    </div>
     <section class="pie_pagina">
         <section id="map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2896.618601921634!2d-3.8532828845584204!3d43.447680979128826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4949bb2a323c29%3A0xcbc1863c74913b6d!2sIES%20Augusto%20Gonz%C3%A1lez%20de%20Linares!5e0!3m2!1ses!2ses!4v1652440036141!5m2!1ses!2ses"
@@ -91,7 +113,34 @@
           </a>
         </div>
         </section> 
-    </section>  
+    </section>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // Obtén todas las imágenes de la clase "objetivo"
+    var objetivos = document.querySelectorAll('.objetivo img');
+
+    // Agrega un listener de clic a cada imagen
+    objetivos.forEach(function (imagen) {
+      imagen.addEventListener('click', function () {
+        // Obtiene el texto y la URL de la imagen
+        var texto = imagen.alt;
+        var imagenURL = imagen.src;
+
+        // Crea un popup con SweetAlert
+        Swal.fire({
+          title: texto,
+          text: "Breve descripción aquí",  // Agrega tu descripción aquí
+          imageUrl: imagenURL,
+          imageWidth: 400,  // Ajusta según tus necesidades
+          imageHeight: 300,  // Ajusta según tus necesidades
+          imageAlt: texto
+        });
+      });
+    });
+  });
+</script>
 </body>
 
 </html>
