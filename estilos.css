@@ -748,27 +748,34 @@ footer {
   margin-right: auto;
   align-items: center;
   justify-content: center;
-  text-align: center; /* Agregamos text-align: center aquí */
+  text-align: center;
+  /* Agregamos text-align: center aquí */
 }
+
 .cuerpo_equipo h1 {
-  color:white;
+  color: white;
   background-color: black;
-  text-align: center; 
-  margin: 0 auto; /* Añadimos margin: 0 auto; para centrar horizontalmente */
+  text-align: center;
+  margin: 0 auto;
+  /* Añadimos margin: 0 auto; para centrar horizontalmente */
 }
+
 /* Fin del CSS complementario */
 
 .entrenador {
   margin: 0 6%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Puedes ajustar esto según tus preferencias */
+  justify-content: center;
+  /* Puedes ajustar esto según tus preferencias */
   align-items: center;
 }
+
 .ficha_entrenador {
   width: 200px;
   height: 300px;
-  margin: 60px; /* Ajuste del margen para los jugadores */
+  margin: 60px;
+  /* Ajuste del margen para los jugadores */
   position: relative;
   cursor: pointer;
   background-color: black;
@@ -798,6 +805,7 @@ footer {
   justify-content: space-between;
   align-items: flex-start;
 }
+
 .ficha_jugador {
   width: 200px;
   height: 400px;
@@ -848,6 +856,7 @@ footer {
   color: white;
   text-align: center;
 }
+
 /*↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ RESPONSIVE ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
 @media (max-width: 1000px) {
   cabecera {
@@ -944,4 +953,11 @@ footer {
   .puntuacion tr {
     font-size: 0.9em;
   }
+}
+
+.audios {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
 }
